@@ -35,4 +35,3 @@ The repository `sitemap.xml` should list all the url:s for the latest version of
 More information about sitemap.xml can be found on the official webpage: [https://www.sitemaps.org](https://www.sitemaps.org)
 
 On the landing page for each dataset the resource metadata should be availible as schema.org json-ld.
-Recomendations and examples is listed HERE.
