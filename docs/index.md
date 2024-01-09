@@ -1,6 +1,5 @@
-# SND Technical specifications
+# Documentation
 
+This documentation contains technical information about the platform researchdata.se.
 
-## Harvesting to researchdata.se
-
-test update
+So
