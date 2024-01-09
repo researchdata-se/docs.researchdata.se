@@ -1,6 +1,6 @@
 # Documentation
 
-This documentation contains technical information about the platform [researchdata.se](https://researchdata.se).
+This documentation contains technical information about the data portal [researchdata.se](https://researchdata.se).
 
 ## Topics
 
