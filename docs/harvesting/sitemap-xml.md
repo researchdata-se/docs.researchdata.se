@@ -1,6 +1,5 @@
 # sitemap.xml
 
-
 Your repository should implement a sitemap.xml endpoint to provide webcrawlers to find and index the landing page for each dataset. The url to sitemap.xml should be added to `robots.txt` for example:
 
 ```txt

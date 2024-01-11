@@ -1,7 +1,20 @@
 site_name: Researchdata.se
-theme: material
 repo_url: https://github.com/researchdata-se/docs.researchdata.se/
 edit_uri: edit/main/docs/
+
+theme: 
+  name: material
+  language: en
+  features:
+    - content.action.edit
+    - content.code.copy
+    - search.suggest
+  icon:
+    edit: material/pencil
+  font:
+    text: Roboto
+    code: Roboto Mono
+
 
 markdown_extensions:
   - pymdownx.highlight:

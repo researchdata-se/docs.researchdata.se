@@ -1,14 +1,16 @@
 # docs.researchdata.se
-API and metadata documentation.  
-The documentation can be accessed on:  
+Harvesting, controlled vocabularies and metadata documentation.  
+The documentation is live on:  
 https://docs.researchdata.se
 
 # edit online
 Make changes to the markdown files in the `docs` directory and commit.
 
-# editing localy
+# edit on your computer
 
-## install dependecies localy (require python)
+This requires [python](https://www.python.org) and [pip](https://pypi.org/project/pip)
+
+## install dependecies localy
 
 `pip install mkdocs`  
 `pip install mkdocs-material`
