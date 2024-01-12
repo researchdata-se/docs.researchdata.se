@@ -4,13 +4,13 @@ The Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) is a wel
 This is the recomended way to provide metadata to the catalogue on researchdata.se.
 
 A oai-pmh endpoint must be able describe each resource in `oai_dc` (dublin core). Additional parallell metadata formats is recomended.  
-For researchdata.se DataCite XML is required.
+For researchdata.se [DataCite XML](../metadata/datacite-xml.md) is required.
 
 ## OAI-PMH via DataCite
 If the repository registers DOI:s via DataCite all metadata will be harvestable via a OAI-PMH set on `oai.datacite.org` some example sets:  
 
-* [SND.SND](https://oai.datacite.org/oai/?verb=ListRecords&metadataPrefix=datacite&set=SND.SND)
-* 
+* [SND.SND via DataCite](https://oai.datacite.org/oai/?verb=ListRecords&metadataPrefix=datacite&set=SND.SND)
+* [SND.BOLIN via DataCite](https://oai.datacite.org/oai/?verb=ListRecords&metadataPrefix=datacite&set=SND.BOLIN)
 
 
 
