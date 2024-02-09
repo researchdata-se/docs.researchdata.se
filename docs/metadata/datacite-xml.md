@@ -13,9 +13,10 @@
 When a DOI is registred via DataCite metadata is provided.   
 This metadata is harvestable via DataCites [OAI-PMH](../harvesting/oai-pmh.md) endpoint.
 
-**(M):** Mandatory, **(R):** Recommended, **(O):** Optional  
 
 ## Metadata fields
+
+_**(M):** Mandatory, **(R):** Recommended, **(O):** Optional_
 
 ### Identifier (M)
 
@@ -66,16 +67,65 @@ The main researchers involved in producing the resource, in priority order (occu
 
 ### Title (M)
 
+A name or title by which a resource is known (occurrences: 1-n).
+
+#### Example
+```xml
+<titles>
+  <title xml:lang="en">Example title</title>
+</titles>
+```
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/title/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_title.html)
+
 --------------
 ### Publisher (M)
 
+
+The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role (occurrences: 1).
+
+#### Example
+```xml
+<publisher xml:lang="en" publisherIdentifier="https://ror.org/058zxsr17" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Bolin Centre for Climate Research</publisher>
+```
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_publisher.html)
+
 --------------
+
 ### PublicationYear (M)
 
---------------
-### Subject (M)
+The year when the data was or will be made publicly available. (occurrences: 1)
+
+#### Example
+```xml
+<publicationYear>2024</publicationYear>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publicationyear/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_publicationyear.html)
 
 --------------
+
+### Subject (M)
+
+Subject, keyword, classification code, or key phrase describing the resource (occurrences: 0-n).
+
+#### Example
+```xml
+<subjects>
+  <subject xml:lang="en" subjectScheme="Library of Congress Subject Headings (LCSH)" schemeURI="https://id.loc.gov/authorities/subjects.html" valueURI="https://id.loc.gov/authorities/subjects/sh85083064.html">Medicine</subject>
+  <subject subjectScheme="CESSDA Topic Classification" valueURI="https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=ScienceAndTechnology" classificationCode="ScienceAndTechnology" xml:lang="en">SCIENCE AND TECHNOLOGY</subject>
+  <subject subjectScheme="MeSH" valueURI="http://id.nlm.nih.gov/mesh/D007091" classificationCode="D007091" xml:lang="en">Image Processing, Computer-Assisted</subject>
+  <subject subjectScheme="Standard för svensk indelning av forskningsämnen 2011" classificationCode="302" xml:lang="en">Clinical Medicine</subject>
+</subjects>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/subject/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_subject.html)
+
+--------------
+
 ### Contributor (O)
 
 --------------
