@@ -37,13 +37,25 @@ The main researchers involved in producing the resource, in priority order (occu
 #### Example
 ```xml
 <creators>
-    <creator>
-        <creatorName nameType="Personal">Anka, Kalle</creatorName>
-        <givenName>Kalle</givenName>
-        <familyName>Anka</familyName>
-        <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
-        <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
-    </creator>
+  <creator>
+    <creatorName nameType="Personal">Kirchner, Nina</creatorName>
+    <givenName>Nina</givenName>
+    <familyName>Kirchner</familyName>
+    <nameIdentifier schemeURI="https://orcid.org" nameIdentifierScheme="ORCID">0000-0002-6371-5527</nameIdentifier>
+    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>
+    <affiliation affiliationIdentifier="https://ror.org/058zxsr17" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Bolin Centre for Climate Research</affiliation>            
+  </creator>
+  <creator>
+    <creatorName nameType="Personal">Jansen, Joachim</creatorName>
+    <givenName>Joachim</givenName>
+    <familyName>Jansen</familyName>
+    <nameIdentifier schemeURI="https://orcid.org" nameIdentifierScheme="ORCID">0000-0001-5965-7662</nameIdentifier>
+    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>  
+  </creator>
+  <creator>
+    <creatorName xml:lang="en" nameType="Organizational">Bolin Centre for Climate Research</creatorName>
+    <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/058zxsr17</nameIdentifier>
+  </creator>
 </creators>
 ```
 
@@ -76,10 +88,10 @@ The main researchers involved in producing the resource, in priority order (occu
 ### ResourceType (M)
 
 --------------
-### AlternateIdentifier (M)
+### AlternateIdentifier (O)
 
 --------------
-### RelatedIdentifier (M)
+### RelatedIdentifier (O)
 
 --------------
 ### Format (O)
@@ -95,6 +107,22 @@ The main researchers involved in producing the resource, in priority order (occu
 
 --------------
 ### FundingReference (O)
+
+Information about financial support (funding) for the resource being registered (occurrence: 0-n).
+
+#### Example
+```xml
+<fundingReferences>
+  <fundingReference>
+    <funderName>Formas</funderName>
+    <funderIdentifier funderIdentifierType="ROR">https://ror.org/03pjs1y45</funderIdentifier>
+    <awardNumber awardURI="https://www.vr.se/swecris#/project/2021-02916_Formas">2021-02916</awardNumber>
+    <awardTitle xml:lang="sv">Glaciärer, klimat och snabba förändringarna i det svenska Arktis - ett kommunikationsprojekt genom erfarenhetsbaserat lärande vid Tarfala forskningsstation</awardTitle>
+  </fundingReference>
+</fundingReferences>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/fundingreference/)
 
 --------------
 
