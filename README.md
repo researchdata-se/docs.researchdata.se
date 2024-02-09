@@ -12,8 +12,7 @@ This requires [python](https://www.python.org) and [pip](https://pypi.org/projec
 
 ## install dependecies localy
 
-`pip install mkdocs`  
-`pip install mkdocs-material`
+`pip install mkdocs mkdocs-material`
 
 ## run localy
 
