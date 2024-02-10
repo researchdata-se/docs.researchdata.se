@@ -7,7 +7,6 @@
 
     This list of fields is a draft. 
     Discussions in the [issue tracker](https://github.com/researchdata-se/docs.researchdata.se/issues/1)  
-
 </div>
 
 When a DOI is registred via DataCite metadata is provided.   
@@ -22,8 +21,7 @@ _**(M):** Mandatory, **(R):** Recommended, **(O):** Optional_
 
 The unique identifier for this version of the resource.
 
-#### Example
-```xml
+```xml title="identifier example"
 <identifier identifierType="DOI">10.123/245.67</identifier>
 ```
 [Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/identifier/) |
@@ -35,8 +33,7 @@ The unique identifier for this version of the resource.
 
 The main researchers involved in producing the resource, in priority order (occurrences: 1-n).
 
-#### Example
-```xml
+```xml title="creator example"
 <creators>
   <creator>
     <creatorName nameType="Personal">Kirchner, Nina</creatorName>
@@ -69,8 +66,7 @@ The main researchers involved in producing the resource, in priority order (occu
 
 A name or title by which a resource is known (occurrences: 1-n).
 
-#### Example
-```xml
+```xml title="title example"
 <titles>
   <title xml:lang="en">Example title</title>
 </titles>
@@ -79,13 +75,13 @@ A name or title by which a resource is known (occurrences: 1-n).
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_title.html)
 
 --------------
+
 ### Publisher (M)
 
 
 The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role (occurrences: 1).
 
-#### Example
-```xml
+```xml title="publisher example"
 <publisher xml:lang="en" publisherIdentifier="https://ror.org/058zxsr17" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Bolin Centre for Climate Research</publisher>
 ```
 [Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/) |
@@ -97,8 +93,7 @@ The name of the entity that holds, archives, publishes prints, distributes, rele
 
 The year when the data was or will be made publicly available. (occurrences: 1)
 
-#### Example
-```xml
+```xml title="publicationYear example"
 <publicationYear>2024</publicationYear>
 ```
 
@@ -111,8 +106,7 @@ The year when the data was or will be made publicly available. (occurrences: 1)
 
 Subject, keyword, classification code, or key phrase describing the resource (occurrences: 0-n).
 
-#### Example
-```xml
+```xml title="subject example"
 <subjects>
   <subject xml:lang="en" subjectScheme="Library of Congress Subject Headings (LCSH)" schemeURI="https://id.loc.gov/authorities/subjects.html" valueURI="https://id.loc.gov/authorities/subjects/sh85083064.html">Medicine</subject>
   <subject subjectScheme="CESSDA Topic Classification" valueURI="https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=ScienceAndTechnology" classificationCode="ScienceAndTechnology" xml:lang="en">SCIENCE AND TECHNOLOGY</subject>
@@ -128,40 +122,174 @@ Subject, keyword, classification code, or key phrase describing the resource (oc
 
 ### Contributor (O)
 
+The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource. To supply multiple contributors, repeat this property. (occurrence: 0-n)
+
+```xml title="contributor example"
+<contributors>
+  <contributor>
+    <contributorName nameType="Personal">Kirchner, Nina</creatorName>
+    <givenName>Nina</givenName>
+    <familyName>Kirchner</familyName>
+    <nameIdentifier schemeURI="https://orcid.org" nameIdentifierScheme="ORCID">0000-0002-6371-5527</nameIdentifier>
+    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>          
+  </contributor>
+</contributors>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/contributor/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_contributor.html)
+
 --------------
+
 ### Date (M)
 
+Different dates relevant to the work (occurrences: 0-n).
+
+```xml title="date example"
+<dates>
+  <date dateType="Issued">2024-01-05</date>
+</dates>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/date/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_date.html)
+
 --------------
+
 ### Language (R)
 
+The primary language of the resource (occurrences: 0-1).  
+ISO 639-1 language codes. Examples: en, sv, de.
+
+```xml  title="language example"
+<language>en</language>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/language/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_language.html)
+
 --------------
+
 ### ResourceType (M)
 
+A description of the resource (occurrences: 0-1).
+
+```xml title="resourceType example"
+<resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/resourcetype/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_resourcetype.html)
+
 --------------
+
 ### AlternateIdentifier (O)
 
+An identifier or identifiers other than the primary Identifier applied to the resource being registered (occurrences: 0-n).
+
+```xml title="alternateIdentifier example"
+<alternateIdentifiers>
+  <alternateIdentifier alternateIdentifierType="ISBN">937-0-1234-56789-X</alternateIdentifier>
+</alternateIdentifiers>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/alternateidentifier/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_alternateidentifier.html)
+
 --------------
+
 ### RelatedIdentifier (O)
 
---------------
-### Format (O)
+Definition: Identifiers of related resources. These must be globally unique identifiers (occurrences: 0-n).
+
+```xml title="relatedIdentifier example"
+<relatedIdentifiers>
+  <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy" resourceTypeGeneral="JournalArticle">10.21384/bar</relatedIdentifier>
+  <relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf" resourceTypeGeneral="Dataset">10.21384/123.456</relatedIdentifier>
+</relatedIdentifiers>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/relatedidentifier/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_relatedidentifier.html)
+
 
 --------------
+
+### Format (O)
+
+Technical format of the resource. (occurrences: 0-n).
+
+```xml title="format example"
+<formats>
+  <format>text/csv</format>
+</formats>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/format/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_format.html)
+
+--------------
+
 ### Version (O)
+
+The version number of the resource (occurrences: 0-1).
+
+```xml title="version example"
+<version>2</version>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/version/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_version.html)
+
 
 --------------
 ### Rights (R)
 
---------------
-### Description (M)
+Any rights information for this resource (occurrences: 0-n).  
+Its recomended to describe the access level by using [info:eu-repo-Access-Terms vocabulary](https://guidelines.openaire.eu/en/latest/data/field_rights.html#rightsuri-ma).
+
+```xml title="rights example"
+<rightsList>
+  <rights rightsURI=”info:eu-repo/semantics/openAccess” />
+  <rights rightsURI=”http://creativecommons.org/licenses/by/4.0/”>
+    Creative Commons Attribution 4.0 International
+  </rights>
+</rightsList>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/rights/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_rights.html)
 
 --------------
+
+### Description (M)
+
+All additional information that does not fit in any of the other categories. May be used for technical information (occurrences: 0-n).
+
+```xml title="description example"
+<descriptions>
+  <description xml:lang="en" descriptionType="Abstract">
+    Example description.
+  </description>
+  <description xml:lang="sv" descriptionType="Abstract">
+    Exempelbeskrivning.
+  </description>
+  <description xml:lang="en" descriptionType="Other">
+    This is a note or some extra description.
+  </description>
+</descriptions>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/description/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_description.html)
+
+--------------
+
 ### FundingReference (O)
 
 Information about financial support (funding) for the resource being registered (occurrence: 0-n).
 
-#### Example
-```xml
+```xml title="fundingReference example"
 <fundingReferences>
   <fundingReference>
     <funderName>Formas</funderName>

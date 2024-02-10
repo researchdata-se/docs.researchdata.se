@@ -9,7 +9,7 @@ Its recomended to include json-ld in the html markup to make it easy for crawler
 ## Examples
 
 ??? example "SITES: Meteorological data from Miellejohka, 383 m a.s.l."
-    ```html
+    ```html title="example of json-ld included in landing page html markup"
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
