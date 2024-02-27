@@ -285,6 +285,26 @@ All additional information that does not fit in any of the other categories. May
 
 --------------
 
+### GeoLocation (O)
+
+Spatial region or named place where the data was gathered or about which the data is focused (occurrences: 0-n).
+
+```xml title="GeoLocation example"
+<geoLocations>
+  <geoLocation>
+    <geoLocationPoint>31.233 -67.302</geoLocationPoint>
+    <geoLocationBox>41.090 -71.032 42.893 -68.211</geoLocationBox>
+    <geoLocationPlace>Atlantic Ocean</geoLocationPlace>
+  </geoLocation>
+</geoLocations>
+```
+
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/geolocation/) |
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_geolocation.html)
+
+
+--------------
+
 ### FundingReference (O)
 
 Information about financial support (funding) for the resource being registered (occurrence: 0-n).
