@@ -31,7 +31,7 @@ The unique identifier for this version of the resource.
 
 ### Creator (M)
 
-The main researchers involved in producing the resource, in priority order (occurrences: 1-n).
+The person(-s) and/or orginzations involved in creating the resource, in priority order (occurrences: 1-n).
 
 ```xml title="creator example"
 <creators>
@@ -91,7 +91,7 @@ The name of the entity that holds, archives, publishes prints, distributes, rele
 
 ### PublicationYear (M)
 
-The year when the data was or will be made publicly available. (occurrences: 1)
+The year when the resource was or will be made publicly available. (occurrences: 1)
 
 ```xml title="publicationYear example"
 <publicationYear>2024</publicationYear>
