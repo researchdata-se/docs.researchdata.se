@@ -40,15 +40,15 @@ The person(-s) and/or orginzations involved in creating the resource, in priorit
     <givenName>Nina</givenName>
     <familyName>Kirchner</familyName>
     <nameIdentifier schemeURI="https://orcid.org" nameIdentifierScheme="ORCID">0000-0002-6371-5527</nameIdentifier>
-    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>
-    <affiliation affiliationIdentifier="https://ror.org/058zxsr17" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Bolin Centre for Climate Research</affiliation>            
+    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>
+    <affiliation affiliationIdentifier="https://ror.org/058zxsr17" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Bolin Centre for Climate Research</affiliation>            
   </creator>
   <creator>
     <creatorName nameType="Personal">Jansen, Joachim</creatorName>
     <givenName>Joachim</givenName>
     <familyName>Jansen</familyName>
     <nameIdentifier schemeURI="https://orcid.org" nameIdentifierScheme="ORCID">0000-0001-5965-7662</nameIdentifier>
-    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>  
+    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>  
   </creator>
   <creator>
     <creatorName xml:lang="en" nameType="Organizational">Bolin Centre for Climate Research</creatorName>
@@ -131,7 +131,7 @@ The institution or person responsible for collecting, managing, distributing, or
     <givenName>Nina</givenName>
     <familyName>Kirchner</familyName>
     <nameIdentifier schemeURI="https://orcid.org" nameIdentifierScheme="ORCID">0000-0002-6371-5527</nameIdentifier>
-    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiiationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>          
+    <affiliation affiliationIdentifier="https://ror.org/05f0yaq80" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Stockholm University</affiliation>          
   </contributor>
 </contributors>
 ```
