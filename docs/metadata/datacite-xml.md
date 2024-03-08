@@ -31,7 +31,7 @@ The unique identifier for this version of the resource.
 
 ### Creator (M)
 
-The person(-s) and/or orginzations involved in creating the resource, in priority order (occurrences: 1-n).
+The person(-s) and/or organization(-s) involved in creating the resource, in priority order (occurrences: 1-n).
 
 ```xml title="creator example"
 <creators>
@@ -200,7 +200,7 @@ An identifier or identifiers other than the primary Identifier applied to the re
 
 ### RelatedIdentifier (O)
 
-Definition: Identifiers of related resources. These must be globally unique identifiers (occurrences: 0-n).
+Identifiers of related resources. These must be globally unique identifiers (occurrences: 0-n).
 
 ```xml title="relatedIdentifier example"
 <relatedIdentifiers>
@@ -264,7 +264,7 @@ Its recomended to describe the access level by using [info:eu-repo-Access-Terms 
 
 ### Description (M)
 
-All additional information that does not fit in any of the other categories. May be used for technical information (occurrences: 0-n).
+A brief summary of the resource. May also be used for technical information. (occurrences: 0-n).
 
 ```xml title="description example"
 <descriptions>
@@ -287,7 +287,7 @@ All additional information that does not fit in any of the other categories. May
 
 ### GeoLocation (O)
 
-Spatial region or named place where the data was gathered or about which the data is focused (occurrences: 0-n).
+Spatial region or named place where the data contained in the resource was gathered or about which the data is focused (occurrences: 0-n).
 
 ```xml title="GeoLocation example"
 <geoLocations>
