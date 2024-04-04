@@ -126,7 +126,7 @@ The institution or person responsible for collecting, managing, distributing, or
 
 ```xml title="contributor example"
 <contributors>
-  <contributor>
+  <contributor contributorType="Other">
     <contributorName nameType="Personal">Kirchner, Nina</creatorName>
     <givenName>Nina</givenName>
     <familyName>Kirchner</familyName>
