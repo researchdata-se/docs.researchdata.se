@@ -1,12 +1,8 @@
 # Shema.org JSON-LD
 
-`TODO: information and best practice on schema.org`
+Its recomended to include json-ld in the html markup to make it easy for crawlers to find and parse the structured metadata.  
+There is several ways to encode your metadata using JsonLd the goal of this list is to provide examples and recomendation about how to provide good metadata with a set of recomended properties.
 
-## Include in html markup
-
-Its recomended to include json-ld in the html markup to make it easy for crawlers to find and parse the structured metadata.
-
-## Examples
 
 ??? example "SITES: Meteorological data from Miellejohka, 383 m a.s.l."
     ```html title="example of json-ld included in landing page html markup"
@@ -118,6 +114,139 @@ Its recomended to include json-ld in the html markup to make it easy for crawler
     }
 	</script>
     ```
+
+
+## Properties
+
+To describe a dateset using schema.org the json-ld type must be set to `Dataset` minimal example:
+
+??? example "Minimal JsonLD Dataset"
+    ```json title="example of json-ld included in landing page html markup"
+    {
+        "@context": "https://schema.org/",
+        "@id": "https://doi.org/xxxx",
+        "@type": "Dataset",
+        "name": "Example dataset",
+        "description": "Dataset description",
+        "keywords": ["example tag", "another tag"],
+        "publisher": {
+            "@type": "Organization",
+            "@id": "https://ror.org/0093a8w51"
+            "name": "Blekinge Institute of Technology"
+        }
+    }
+    ```
+For the proerty examples only the value will be listed to make the examples a bit shorter.
+
+### identifier
+
+Single or multiple values for identifiers for local or global identifiers for the dataset.
+Can be `text`, `url` or a set of `PropertyValue` 
+
+### creator
+
+#### Example
+```json title="list of creators"
+[
+    {
+        "@type": "Person",
+        "@id": "https://orcid.org/0000-0002-7365-0691",
+        "givenName": "Olof",
+        "familyName": "Olsson"
+    },
+    {
+        "@type": "Organization",
+        "@id": "https://ror.org/048a87296",
+        "name": "Uppsala University"
+    }
+]
+```
+
+One or multiple [Organization]() and/or [Person]()
+
+[Reference](https://schema.org/creator)
+
+### name
+
+Used for the title of the dataset, an alternate title exist use the property `alternateName`
+
+### publisher
+
+Recomended to use a single organization.
+
+### datePublished
+
+Examples:
+`2024-04-01`  
+`2024`
+
+ISO-8601 date, full date or just year.
+
+### dateCreated
+
+Examples:
+`2024-04-01`  
+`2024`
+
+ISO-8601 date, full date or just year.
+
+### keywords
+
+### contributor
+
+### inLanguage
+
+### additionalType
+
+### version
+
+Version number of the dataset if availible.
+
+Examples:  
+`1`
+`1.0`
+
+### license
+
+URL to the licence for the dataset.
+
+Examples:  
+`https://creativecommons.org/publicdomain/zero/1.0/`  
+`https://creativecommons.org/licenses/by/4.0/`
+
+
+### description
+
+### distribution
+
+Describes and links to the files in the dataset.
+
+```json title="list of files in the dataset"
+[
+    {
+        "@type": "DataDownload",
+        "name": "my-data.tsv",
+        "contentUrl": "https://www.sample-data-repository.org/dataset/my-data.csv",
+        "encodingFormat": "text/csv"
+    },
+    {
+        "@type": "DataDownload",
+        "name": "readme.txt",
+        "contentUrl": "https://www.sample-data-repository.org/dataset/readme.txt",
+        "encodingFormat": "text/plain"
+    }
+]
+```
+[Reference](https://schema.org/distribution)
+
+### spatialCoverage
+
+### funding
+
+## Examples
+
+
+
     
 ## References
 
