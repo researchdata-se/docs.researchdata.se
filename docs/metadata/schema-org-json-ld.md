@@ -37,7 +37,7 @@ Can be `text`, `url` or a set of `PropertyValue`
 
 ### creator
 
-#### Example
+Example  
 ```json title="list of creators"
 [
     {
@@ -60,7 +60,7 @@ One or multiple [Organization]() and/or [Person]()
 
 ### name
 
-Used for the title of the dataset, an alternate title exist use the property `alternateName`
+Used for the title of the dataset, an alternate title exist use the property `alternateName`.
 
 ### publisher
 
@@ -75,10 +75,9 @@ The `@id` and/or `indetifier` should be ROR-id if availible.
 }
 ```
 
-
 ### datePublished
 
-Examples:
+Examples:  
 `2024-04-01`  
 `2024`
 
@@ -86,7 +85,7 @@ ISO-8601 date, full date or just year.
 
 ### dateCreated
 
-Examples:
+Examples:  
 `2024-04-01`  
 `2024`
 
@@ -96,10 +95,21 @@ ISO-8601 date, full date or just year.
 
 Keywords used to categorize the dataset. Values can be both text and URL:s.
 
+Example:  
+```json title="keyword example"
+[
+    "Health",
+    "http://id.nlm.nih.gov/mesh/D014943"
+]
+```
 
 ### contributor
 
+`TODO: add description & examples`
+
 ### inLanguage
+
+`TODO: add description & examples`
 
 ### additionalType
 
@@ -110,7 +120,7 @@ One or multiple additional types to classify the dataset. Can be Url:s or plain 
 Version number of the dataset if availible.
 
 Examples:  
-`1`
+`1`  
 `1.0`
 
 ### license
@@ -128,7 +138,8 @@ Plain text description of the dataset. Should contains a short abstract and any 
 
 ### distribution
 
-Describes and links to the files in the dataset.
+Describes and links to the files in the dataset.  
+If the dataset contains multiple files in a hierarchical structure provide the relative path in `name`. e.g. `images/2024-03-14.jpg`.
 
 ```json title="list of files in the dataset"
 [
@@ -150,6 +161,8 @@ Describes and links to the files in the dataset.
 
 ### spatialCoverage
 
+`TODO: add description & examples`
+
 ### temporalCoverage
 
 `TODO: recomendation about timespan, historical dates etc.`
@@ -163,6 +176,7 @@ Examples
 
 ### funding
 
+`TODO: add description & examples`
 
 ### variableMeasured
 
