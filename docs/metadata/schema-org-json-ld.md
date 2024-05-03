@@ -105,15 +105,53 @@ Example:
 
 ### contributor
 
-`TODO: add description & examples`
+Person(s) and / or organisation(s) with a contributor role to the dataset.
+
+Example  
+```json title="list of contributors"
+[
+    {
+        "@type": "Person",
+        "@id": "https://orcid.org/0000-0002-7365-0691",
+        "givenName": "Kurt",
+        "familyName": "Olsson"
+    },
+    {
+        "@type": "Organization",
+        "@id": "https://ror.org/05ynxx418",
+        "name": "Linköping University"
+    }
+]
+```
+
 
 ### inLanguage
 
-`TODO: add description & examples`
+The primary language(s) in of the resource. u
+Range text literal or [schema.org/Language](https://schema.org/Language)
+
+Examples:  
+`en`  
+`sv`  
+
+```json title="schema.org/Language example"
+[
+    {
+        "@type":"Language",
+        "identifier": "en",
+        "name":"English",
+    }
+]
+```
 
 ### additionalType
 
 One or multiple additional types to classify the dataset. Can be Url:s or plain text.
+
+Examples:  
+`survey`  
+`http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL`  
+`http://publications.europa.eu/resource/authority/dataset-type/GEOSPATIAL`
 
 ### version
 
@@ -161,11 +199,33 @@ If the dataset contains multiple files in a hierarchical structure provide the r
 
 ### spatialCoverage
 
-`TODO: add description & examples`
+Geographical coverage of the dataset, can be a named place or place with cooridnates.
+For `@id` use url to the named place on [geonames.org](https://www.geonames.org)
+
+```json title="example of some ways to add spatial coverage"
+[
+    {
+        "@type": "Place",
+        "containedInPlace":{
+            "@type": "Country",
+            "@id": "https://www.geonames.org/countries/SE/",
+            "identifier": "SE",
+            "name": "Sweden"
+        },
+        "geo":{
+            "@type": "GeoCoordinates",
+            "latitude": 64.226154,
+            "longitude": 19.770768
+        },
+        "name": "Åhedbäcken, Catchment 14"
+    }
+]
+```
 
 ### temporalCoverage
 
-`TODO: recomendation about timespan, historical dates etc.`
+The time period the dataset covers.  
+Use ISO-datetime for single date/time or timespan.
 
 Examples  
 `2024-03-15` sigle date no timespan  
@@ -257,7 +317,7 @@ Describes the variables in the dataset.
         "name":"SITES data portal",
         "url":"https://data.fieldsites.se"
     },
-    "spatialCoverage":[
+    "spatialCoverage": [
         {
             "@type":"Place",
             "containedInPlace":{
