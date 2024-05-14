@@ -19,7 +19,7 @@ __Example sitemap.xml__
 * [fieldsites.se](https://meta.fieldsites.se/sitemap.xml)
 * [snd catalogue](https://snd.gu.se/en/catalogue/sitemap.xml)
 
-More information about sitemap.xml can be found on the official webpage: [https://www.sitemaps.org](https://www.sitemaps.org)
+More information about sitemap.xml can be found on the official webpage: [sitemaps.org](https://www.sitemaps.org)
 
 On the landing page for each dataset the resource metadata should be availible as [schema.org json-ld](../metadata/schema-org-json-ld.md).
 

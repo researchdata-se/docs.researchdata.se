@@ -79,19 +79,21 @@ The `@id` and/or `indetifier` should be ROR-id if availible.
 
 ### datePublished (M)
 
+ISO-8601 date, full date or just year.
+
 Examples:  
 `2024-04-01`  
 `2024`
 
-ISO-8601 date, full date or just year.
 
 ### dateCreated (R)
 
+ISO-8601 date, full date or just year.
+
 Examples:  
 `2024-04-01`  
 `2024`
 
-ISO-8601 date, full date or just year.
 
 ### keywords (M)
 
@@ -130,7 +132,8 @@ Example
 ### inLanguage (R)
 
 The primary language(s) in of the resource. u
-Range text literal or [schema.org/Language](https://schema.org/Language)
+Range text literal or [schema.org/Language](https://schema.org/Language)  
+Use `ISO 639-1`, `ISO 639-2` or `ISO 639-3` codes as identifier
 
 Examples:  
 `en`  
@@ -148,7 +151,8 @@ Examples:
 
 ### additionalType (O)
 
-One or multiple additional types to classify the dataset. Can be Url:s or plain text.
+One or multiple additional types to classify the dataset.  
+Can be Url:s or plain text.
 
 Examples:  
 `survey`  
@@ -220,6 +224,14 @@ For `@id` use url to the named place on [geonames.org](https://www.geonames.org)
             "longitude": 19.770768
         },
         "name": "Åhedbäcken, Catchment 14"
+    },
+    {
+        "@type":"Place",
+        "geo":{
+            "@type":"GeoShape",
+            "polygon":"11.966386321679863 57.68787445177847 11.967288055967629 57.68864040232995 11.96600241500289 57.688969684507015 11.965243529711358 57.688263394424354 11.966386321679863 57.68787445177847"
+        },
+        "name":"Geovetarcentrum"
     }
 ]
 ```
@@ -238,7 +250,24 @@ Examples
 
 ### funding (O)
 
-`TODO: add description & examples`
+Describes the grant(s) for funding the dataset.
+ 
+Example:  
+```json title="example of a grant from VR linking to the post in Swecris"
+[
+    {
+        "@type": "Grant",
+        "@id": "https://www.vr.se/swecris#/project/2023-00154_VR",
+        "identifier": "2023-00154_VR",
+        "name": "Biobank Sverige",
+        "funder": {
+            "@type":"Organization",
+            "@id":"https://ror.org/03zttf063",
+            "name":"Swedish Research Council"
+        }
+    }
+]
+```
 
 ### variableMeasured (O)
 
