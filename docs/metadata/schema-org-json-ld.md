@@ -5,6 +5,8 @@ There is several ways to encode your metadata using JsonLd the goal of this list
 
 ## Properties
 
+_**(M):** Mandatory, **(R):** Recommended, **(O):** Optional_
+
 To describe a dateset using schema.org the json-ld type must be set to `Dataset` minimal example:
 
 ??? example "Minimal JsonLD Dataset"
@@ -30,12 +32,12 @@ To describe a dateset using schema.org the json-ld type must be set to `Dataset`
     ```
 For the proerty examples only the value will be listed to make the examples a bit shorter.
 
-### identifier
+### identifier (M)
 
 Single or multiple values for identifiers for local or global identifiers for the dataset.
 Can be `text`, `url` or a set of `PropertyValue` 
 
-### creator
+### creator (M)
 
 Example  
 ```json title="list of creators"
@@ -58,11 +60,11 @@ One or multiple [Organization]() and/or [Person]()
 
 [Reference](https://schema.org/creator)
 
-### name
+### name (M)
 
 Used for the title of the dataset, an alternate title exist use the property `alternateName`.
 
-### publisher
+### publisher (M)
 
 Recomended to use a single organization. 
 The `@id` and/or `indetifier` should be ROR-id if availible.
@@ -75,7 +77,7 @@ The `@id` and/or `indetifier` should be ROR-id if availible.
 }
 ```
 
-### datePublished
+### datePublished (M)
 
 Examples:  
 `2024-04-01`  
@@ -83,7 +85,7 @@ Examples:
 
 ISO-8601 date, full date or just year.
 
-### dateCreated
+### dateCreated (R)
 
 Examples:  
 `2024-04-01`  
@@ -91,7 +93,7 @@ Examples:
 
 ISO-8601 date, full date or just year.
 
-### keywords
+### keywords (M)
 
 Keywords used to categorize the dataset. Values can be both text and URL:s.
 
@@ -103,7 +105,7 @@ Example:
 ]
 ```
 
-### contributor
+### contributor (O)
 
 Person(s) and / or organisation(s) with a contributor role to the dataset.
 
@@ -125,7 +127,7 @@ Example
 ```
 
 
-### inLanguage
+### inLanguage (R)
 
 The primary language(s) in of the resource. u
 Range text literal or [schema.org/Language](https://schema.org/Language)
@@ -144,7 +146,7 @@ Examples:
 ]
 ```
 
-### additionalType
+### additionalType (O)
 
 One or multiple additional types to classify the dataset. Can be Url:s or plain text.
 
@@ -153,7 +155,7 @@ Examples:
 `http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL`  
 `http://publications.europa.eu/resource/authority/dataset-type/GEOSPATIAL`
 
-### version
+### version (O)
 
 Version number of the dataset if availible.
 
@@ -161,7 +163,7 @@ Examples:
 `1`  
 `1.0`
 
-### license
+### license (R)
 
 URL to the licence for the dataset.
 
@@ -170,11 +172,11 @@ Examples:
 `https://creativecommons.org/licenses/by/4.0/`
 
 
-### description
+### description (M)
 
 Plain text description of the dataset. Should contains a short abstract and any general technical information about the dataset.
 
-### distribution
+### distribution (R)
 
 Describes and links to the files in the dataset.  
 If the dataset contains multiple files in a hierarchical structure provide the relative path in `name`. e.g. `images/2024-03-14.jpg`.
@@ -197,7 +199,7 @@ If the dataset contains multiple files in a hierarchical structure provide the r
 ```
 [Reference](https://schema.org/distribution)
 
-### spatialCoverage
+### spatialCoverage (O)
 
 Geographical coverage of the dataset, can be a named place or place with cooridnates.
 For `@id` use url to the named place on [geonames.org](https://www.geonames.org)
@@ -222,7 +224,7 @@ For `@id` use url to the named place on [geonames.org](https://www.geonames.org)
 ]
 ```
 
-### temporalCoverage
+### temporalCoverage (O)
 
 The time period the dataset covers.  
 Use ISO-datetime for single date/time or timespan.
@@ -234,11 +236,11 @@ Examples
 `http://n2t.net/ark:/99152/p0qhb66skwk` "stenålder 10200 BP (2000) – 3800 BP (2000) | Sweden" by refering to a specified time period from [perio.do](https://perio.do)
 
 
-### funding
+### funding (O)
 
 `TODO: add description & examples`
 
-### variableMeasured
+### variableMeasured (O)
 
 Describes the variables in the dataset.
 
