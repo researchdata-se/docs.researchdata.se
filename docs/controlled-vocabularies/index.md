@@ -80,6 +80,12 @@ Example term:
 ### ICD-10 International Classification of Diseases 
 [https://icd.who.int/browse10/2019/en](https://icd.who.int/browse10/2019/en)
 
+### Inspire
+[https://inspire.ec.europa.eu/glossary](https://inspire.ec.europa.eu/glossary)
+
+Example term:  
+[http://inspire.ec.europa.eu/glossary/Aqueduct](http://inspire.ec.europa.eu/glossary/Aqueduct)
+
 ### MeSH Medical Subject Headings 
 [https://www.nlm.nih.gov/mesh](https://www.nlm.nih.gov/mesh)  
      
