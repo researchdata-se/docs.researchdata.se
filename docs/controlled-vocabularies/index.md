@@ -31,6 +31,30 @@ There is multiple vocabularies used to catagorize and tag resources, some of the
 Example term:  
 [http://vocab.getty.edu/page/aat/300191918](http://vocab.getty.edu/page/aat/300191918)
 
+??? example "DataCite example usage"
+    ```xml title="Example how to point to a AAT subject in DataCite XML"
+    <subjects>
+        <subject 
+        subjectScheme="AAT The art & Architecture Thesaurus" 
+        schemeURI="http://vocab.getty.edu/page/aat/" 
+        valueURI="http://vocab.getty.edu/page/aat/300191918" classificationCode="300191918" xml:lang="en">Asian coins</subject>
+    </subjects>
+    ```
+??? example "JsonLd example usage"
+    ```json title="Example how to point to a AAT subject in JsonLd"
+    {
+        "@context":"https://schema.org/",
+        "@type": "Dataset",
+        "keywords": [
+            {
+                "@type": "DefinedTerm",
+                "@id": "http://vocab.getty.edu/page/aat/300191918",
+                "inDefinedTermSet": "http://vocab.getty.edu/page/aat/",
+                "termCode": "300191918"
+            }
+        ]
+    }
+    ```
 
 ### AGROVOC Vocabulary for Agricultural Sciences 
 [https://agrovoc.fao.org/browse/agrovoc](https://agrovoc.fao.org/browse/agrovoc)  
