@@ -31,30 +31,34 @@ There is multiple vocabularies used to catagorize and tag resources, some of the
 Example term:  
 [http://vocab.getty.edu/page/aat/300191918](http://vocab.getty.edu/page/aat/300191918)
 
-??? example "DataCite example usage"
-    ```xml title="Example how to point to a AAT subject in DataCite XML"
-    <subjects>
-        <subject 
-        subjectScheme="AAT The art & Architecture Thesaurus" 
-        schemeURI="http://vocab.getty.edu/page/aat/" 
-        valueURI="http://vocab.getty.edu/page/aat/300191918" classificationCode="300191918" xml:lang="en">Asian coins</subject>
-    </subjects>
-    ```
-??? example "JsonLd example usage"
-    ```json title="Example how to point to a AAT subject in JsonLd"
-    {
-        "@context":"https://schema.org/",
-        "@type": "Dataset",
-        "keywords": [
-            {
-                "@type": "DefinedTerm",
-                "@id": "http://vocab.getty.edu/page/aat/300191918",
-                "inDefinedTermSet": "http://vocab.getty.edu/page/aat/",
-                "termCode": "300191918"
-            }
-        ]
-    }
-    ```
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="AAT The art & Architecture Thesaurus" 
+            schemeURI="http://vocab.getty.edu/page/aat/" 
+            valueURI="http://vocab.getty.edu/page/aat/300191918"
+            classificationCode="300191918" 
+            xml:lang="en">Asian coins</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://vocab.getty.edu/page/aat/300191918",
+                    "inDefinedTermSet": "http://vocab.getty.edu/page/aat/",
+                    "termCode": "300191918",
+                    "name": "Asian coins"
+                }
+            ]
+        }
+        ```
 
 ### AGROVOC Vocabulary for Agricultural Sciences 
 [https://agrovoc.fao.org/browse/agrovoc](https://agrovoc.fao.org/browse/agrovoc)  
@@ -62,12 +66,70 @@ Example term:
 Example term:  
 [http://aims.fao.org/aos/agrovoc/c_2536](http://aims.fao.org/aos/agrovoc/c_2536)  
 
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="AGROVOC Vocabulary for Agricultural Sciences" 
+            schemeURI="http://aims.fao.org/aos/agrovoc" 
+            valueURI="http://aims.fao.org/aos/agrovoc/c_2152"
+            classificationCode="c_2536" 
+            xml:lang="en">elks</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://aims.fao.org/aos/agrovoc/c_2536",
+                    "inDefinedTermSet": "https://agrovoc.fao.org/browse/agrovoc",
+                    "termCode": "c_2536",
+                    "name": "elks"
+                }
+            ]
+        }
+        ```
+
 ### ALLFO Allmän finländsk ontologi 
 [https://finto.fi/yso](https://finto.fi/yso)  
      
 Example term:  
 [http://www.yso.fi/onto/yso/p13693](http://www.yso.fi/onto/yso/p13693)  
 
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="ALLFO - Allmän finländsk ontologi" 
+            schemeURI="https://finto.fi/yso" 
+            valueURI="http://www.yso.fi/onto/yso/p13693"
+            classificationCode="p13693" 
+            xml:lang="en">elk</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://www.yso.fi/onto/yso/p13693",
+                    "inDefinedTermSet": "https://finto.fi/yso",
+                    "termCode": "p13693",
+                    "name": "elk"
+                }
+            ]
+        }
+        ```
 
 ### ELSST The European Language Social Science Thesaurus 
 [https://elsst.cessda.eu](https://elsst.cessda.eu)  
