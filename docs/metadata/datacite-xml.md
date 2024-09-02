@@ -328,3 +328,4 @@ Information about financial support (funding) for the resource being registered 
 
 - [DataCite shema documentation](http://schema.datacite.org)
 - [OpenAIRE Guidelines for Data Archives](https://guidelines.openaire.eu/en/latest/data/index.html)
+- [DataCite validate metadata](https://support.datacite.org/docs/how-do-i-validate-doi-metadata)

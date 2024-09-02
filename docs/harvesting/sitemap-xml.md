@@ -41,3 +41,6 @@ The repository should implement a sitemap.xml endpoint to provide webcrawlers to
 Sitemap: https://example.org/catalogue/sitemap.xml
 Crawl-delay: 10
 ```
+
+## References
+- [https://www.sitemaps.org/protocol.html](https://www.sitemaps.org/protocol.html)
