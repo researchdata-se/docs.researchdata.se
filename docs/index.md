@@ -9,8 +9,6 @@ Technical information about the data portal [researchdata.se](https://researchda
     If you have a suggestion for improvement please file a [issue](https://github.com/researchdata-se/docs.researchdata.se/issues) or contact olof.olsson at snd.se
 
 
-
-
 <div class="grid cards" markdown>
 
 -   📋 __Controlled Vocabularies__
@@ -36,6 +34,5 @@ Technical information about the data portal [researchdata.se](https://researchda
     Protocols and methods to deliver metadata to other platforms.
 
     ➡️ [More information](./harvesting/index.md)
-
 
 </div>
