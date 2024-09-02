@@ -137,12 +137,70 @@ Example term:
 Example term:  
 [https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f](https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f) 
 
- 
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="ELSST The European Language Social Science Thesaurus" 
+            schemeURI="https://elsst.cessda.eu" 
+            valueURI="https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f"
+            classificationCode="urn:ddi:int.cessda.elsst:a74cd285-d1c6-4e55-8c0d-faf0fe94399f:4" 
+            xml:lang="en">ENVIRONMENT</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f",
+                    "inDefinedTermSet": "https://elsst.cessda.eu",
+                    "termCode": "urn:ddi:int.cessda.elsst:a74cd285-d1c6-4e55-8c0d-faf0fe94399f:4",
+                    "name": "ENVIRONMENT"
+                }
+            ]
+        }
+        ```
+
+
 ### EnvThes Environmental Thesaurus
-[https://ecoportal.lifewatch.eu/ontologies/ENVTHES](https://ecoportal.lifewatch.eu/ontologies/ENVTHES)  
+[https://vocabs.lter-europe.net/envthes](https://vocabs.lter-europe.net/envthes)  
 
 Example term:  
-[https://vocabs.lter-europe.net/envthes](https://vocabs.lter-europe.net/envthes)  
+[http://vocabs.lter-europe.net/EnvThes/20800](http://vocabs.lter-europe.net/EnvThes/20800)  
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="EnvThes Environmental Thesaurus" 
+            schemeURI="https://vocabs.lter-europe.net/envthes" 
+            valueURI="http://vocabs.lter-europe.net/EnvThes/20800"
+            classificationCode="20800" 
+            xml:lang="en">aluminum</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://vocabs.lter-europe.net/EnvThes/20800",
+                    "inDefinedTermSet": "https://vocabs.lter-europe.net/envthes",
+                    "termCode": "20800",
+                    "name": "aluminum"
+                }
+            ]
+        }
+        ```
 
 ### FISH Monument Types FISH Thesaurus Monument Types 
 [https://collectionstrust.org.uk/resource/thesaurus-of-monument-types-fish](https://collectionstrust.org.uk/resource/thesaurus-of-monument-types-fish)   
@@ -150,34 +208,210 @@ Example term:
 Example term:  
 [http://purl.org/heritagedata/schemes/560/concepts/142104](http://purl.org/heritagedata/schemes/560/concepts/142104)  
 
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="FISH Archaeological Sciences Thesaurus" 
+            schemeURI="http://purl.org/heritagedata/schemes/560" 
+            valueURI="http://purl.org/heritagedata/schemes/560/concepts/142104"
+            classificationCode="142104" 
+            xml:lang="en">Archaeomagnetism</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://purl.org/heritagedata/schemes/560/concepts/142104",
+                    "inDefinedTermSet": "http://purl.org/heritagedata/schemes/560",
+                    "termCode": "142104",
+                    "name": "Archaeomagnetism"
+                }
+            ]
+        }
+        ```
+
 ### GCMD Vocabulary for Earth Science
 [https://www.earthdata.nasa.gov/learn/find-data/idn/gcmd-keywords](https://www.earthdata.nasa.gov/learn/find-data/idn/gcmd-keywords)  
      
 Example term:  
 [https://gcmd.earthdata.nasa.gov/kms/concept/b3b14df8-5197-4a26-ae61-882fdba706f3](https://gcmd.earthdata.nasa.gov/kms/concept/b3b14df8-5197-4a26-ae61-882fdba706f3) 
 
- 
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="GCMD Vocabulary for Earth Science" 
+            schemeURI="https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords" 
+            valueURI="https://gcmd.earthdata.nasa.gov/kms/concept/b3b14df8-5197-4a26-ae61-882fdba706f3"
+            classificationCode="b3b14df8-5197-4a26-ae61-882fdba706f3" 
+            xml:lang="en">FOOD STORAGE</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "https://gcmd.earthdata.nasa.gov/kms/concept/b3b14df8-5197-4a26-ae61-882fdba706f3",
+                    "inDefinedTermSet": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+                    "termCode": "b3b14df8-5197-4a26-ae61-882fdba706f3",
+                    "name": "FOOD STORAGE"
+                }
+            ]
+        }
+        ```
+
 ### GEMET General Multilingual Environmental Thesaurus 
-[https://www.eionet.europa.eu/gemet/en/themes/](https://www.eionet.europa.eu/gemet/en/themes/) 
+[http://www.eionet.europa.eu/gemet/](http://www.eionet.europa.eu/gemet) 
 
 Example term:  
 [http://www.eionet.europa.eu/gemet/concept/1500](http://www.eionet.europa.eu/gemet/concept/1500)  
- 
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="GEMET General Multilingual Environmental Thesaurus" 
+            schemeURI="http://www.eionet.europa.eu/gemet" 
+            valueURI="http://www.eionet.europa.eu/gemet/concept/1500"
+            classificationCode="1500" 
+            xml:lang="en">coal</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://www.eionet.europa.eu/gemet/concept/1500",
+                    "inDefinedTermSet": "http://www.eionet.europa.eu/gemet",
+                    "termCode": "1500",
+                    "name": "coal"
+                }
+            ]
+        }
+        ```
+
 ### ICD-10 International Classification of Diseases 
 [https://icd.who.int/browse10/2019/en](https://icd.who.int/browse10/2019/en)
 
-### Inspire
+Example term:  
+[https://icd.who.int/browse10/2019/en#/I20-I25](https://icd.who.int/browse10/2019/en#/I20-I25)
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="ICD-10 International Classification of Diseases" 
+            schemeURI="https://icd.who.int/browse10/2019/" 
+            valueURI="https://icd.who.int/browse10/2019/en#/I20-I25"
+            classificationCode="I20-I25" 
+            xml:lang="en">Ischaemic heart diseases</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "https://icd.who.int/browse10/2019/en#/I20-I25",
+                    "inDefinedTermSet": "https://icd.who.int/browse10/2019/",
+                    "termCode": "I20-I25",
+                    "name": "Ischaemic heart diseases"
+                }
+            ]
+        }
+        ```
+
+### INSPIRE glossary
 [https://inspire.ec.europa.eu/glossary](https://inspire.ec.europa.eu/glossary)
 
 Example term:  
 [http://inspire.ec.europa.eu/glossary/Aqueduct](http://inspire.ec.europa.eu/glossary/Aqueduct)
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="INSPIRE glossary" 
+            schemeURI="http://inspire.ec.europa.eu/glossary" 
+            valueURI="http://inspire.ec.europa.eu/glossary/Aqueduct"
+            classificationCode="Aqueduct" 
+            xml:lang="en">Aqueduct</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://inspire.ec.europa.eu/glossary",
+                    "inDefinedTermSet": "http://inspire.ec.europa.eu/glossary/Aqueduct",
+                    "termCode": "Aqueduct",
+                    "name": "Aqueduct"
+                }
+            ]
+        }
+        ```
 
 ### MeSH Medical Subject Headings 
 [https://www.nlm.nih.gov/mesh](https://www.nlm.nih.gov/mesh)  
      
 Example term:  
 [http://id.nlm.nih.gov/mesh/D003069](http://id.nlm.nih.gov/mesh/D003069) 
- 
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="MeSH Medical Subject Headings" 
+            schemeURI="http://id.nlm.nih.gov/mesh" 
+            valueURI="http://id.nlm.nih.gov/mesh/D003069"
+            classificationCode="D003069" 
+            xml:lang="en">Coffee</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://id.nlm.nih.gov/mesh/D003069",
+                    "inDefinedTermSet": "http://id.nlm.nih.gov/mesh",
+                    "termCode": "D003069",
+                    "name": "Coffee"
+                }
+            ]
+        }
+        ```
+
 ### NASA Thesaurus NASA STI Thesaurus 
 [https://sti.nasa.gov/nasa-thesaurus](https://sti.nasa.gov/nasa-thesaurus)
 
@@ -189,9 +423,50 @@ Popular vocabulary for countries and lower geographical places.
 Examples:  
 `https://www.geonames.org/countries/SE/` - Sweden
 
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <geoLocations>
+            <geoLocation>
+                <geoLocationPlace>Sweden</geoLocationPlace>
+            </geoLocation>
+        </geoLocations>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "spatialCoverage": {
+                "@type": "Place",
+                "@id": "https://www.geonames.org/countries/SE/",
+                "name": "Sweden"
+            }
+        }
+        ```
+
 ## Language
 
-`TODO: vocabulary for languages`
+[Use ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language codes. Examples: en, de, sv
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <language>en</language>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "inLanguage": {
+                "@type": "Language",
+                "name": "Swedish",
+                "identifier": "sv"
+            }
+        }
+        ```
+
 
 ## License
 
@@ -203,3 +478,25 @@ Recomendations for open licenses in a swedish context see
 Examples:  
 `https://creativecommons.org/publicdomain/zero/1.0/`  
 `https://creativecommons.org/licenses/by/4.0/`
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <rightsList>
+            <rights 
+            ml:lang="en" 
+            schemeURI="https://spdx.org/licenses/" 
+            rightsIdentifierScheme="SPDX" 
+            rightsIdentifier=" CC0-1.0" 
+            rightsURI="https://creativecommons.org/publicdomain/zero/1.0/">
+            Creative Commons Zero v1.0 Universal</rights>
+        </rightsList>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+        ```
