@@ -421,7 +421,9 @@ Example term:
 Popular vocabulary for countries and lower geographical places.
 
 Examples:  
-`https://www.geonames.org/countries/SE/` - Sweden
+`https://sws.geonames.org/2661886/` - Sweden  
+`https://sws.geonames.org/2699050/` - Kronoberg  
+`https://sws.geonames.org/2701727/`- Karlshamn  
 
 ??? example "Example usage"
     === "DataCite"
@@ -439,11 +441,14 @@ Examples:
             "@type": "Dataset",
             "spatialCoverage": {
                 "@type": "Place",
-                "@id": "https://www.geonames.org/countries/SE/",
-                "name": "Sweden"
+                "@id": "https://sws.geonames.org/2661886/",
+                "name": "Sweden",
+                "identifier": "SE"
             }
         }
         ```
+
+
 
 ## Language
 
@@ -466,7 +471,6 @@ Examples:
             }
         }
         ```
-
 
 ## License
 
