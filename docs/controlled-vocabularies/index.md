@@ -415,6 +415,38 @@ Example term:
 ### NASA Thesaurus NASA STI Thesaurus 
 [https://sti.nasa.gov/nasa-thesaurus](https://sti.nasa.gov/nasa-thesaurus)
 
+### Standard för svensk indelning av forskningsämnen 2011
+
+[https://www.scb.se/dokumentation/klassifikationer-och-standarder/standard-for-svensk-indelning-av-forskningsamnen/](https://www.scb.se/dokumentation/klassifikationer-och-standarder/standard-for-svensk-indelning-av-forskningsamnen/)  
+
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="Standard för svensk indelning av forskningsämnen 2011" 
+            schemeURI="https://id.kb.se/term/ssif" 
+            classificationCode="105" 
+            xml:lang="en">Earth and Related Environmental Sciences</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "https://id.kb.se/term/ssif",
+                    "termCode": "105",
+                    "name": "Earth and Related Environmental Sciences"
+                }
+            ]
+        }
+        ```
+
 ## Geography
 
 ### Geonames

@@ -396,8 +396,6 @@ Describes the variables in the dataset.
     }
     ```
 
-
-    
 ## References
 
 - [Shema.org/Dataset](https://schema.org/Dataset)
