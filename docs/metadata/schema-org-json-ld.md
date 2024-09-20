@@ -214,7 +214,7 @@ For `@id` use url to the named place on [geonames.org](https://www.geonames.org)
         "@type": "Place",
         "containedInPlace":{
             "@type": "Country",
-            "@id": "https://www.geonames.org/countries/SE/",
+            "@id": "https://sws.geonames.org/2661886/",
             "identifier": "SE",
             "name": "Sweden"
         },
