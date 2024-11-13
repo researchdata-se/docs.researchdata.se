@@ -536,3 +536,23 @@ Examples:
             "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
         ```
+
+## Dataset type
+
+To mark a specific type of Dataset the EU Vocabulary [Dataset Type](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type) provides a way to classify a dataset as syntetic data, test data etc.
+
+A good use case for providing a data set type is to mark syntetic datasets.
+
+??? example "Example for syntetic data"
+    === "DataCite"
+        ```xml
+        <resourceType resourceTypeGeneral="Dataset">SYNTHETIC_DATA</resourceType>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "additionalType": "http://publications.europa.eu/resource/authority/dataset-type/SYNTHETIC_DATA"
+        }
+        ```
