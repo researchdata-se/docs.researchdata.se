@@ -1,4 +1,4 @@
-# Shema.org JSON-LD
+# Schema.org JSON-LD
 
 Its recomended to include json-ld in the html markup to make it easy for crawlers to find and parse the structured metadata.  
 There is several ways to encode your metadata using JsonLd the goal of this list is to provide examples and recomendation about how to provide good metadata with a set of recomended properties.
@@ -398,6 +398,6 @@ Describes the variables in the dataset.
 
 ## References
 
-- [Shema.org/Dataset](https://schema.org/Dataset)
+- [Schema.org/Dataset](https://schema.org/Dataset)
 - [Schema.org validator](https://validator.schema.org)
 - [Google Dataset structured data](https://developers.google.com/search/docs/appearance/structured-data/dataset)
