@@ -1,16 +1,16 @@
 # Schema.org JSON-LD
 
-Its recomended to include json-ld in the html markup to make it easy for crawlers to find and parse the structured metadata.  
-There is several ways to encode your metadata using JsonLd the goal of this list is to provide examples and recomendation about how to provide good metadata with a set of recomended properties.
+Its recommended to include JSON-LD in the html markup to make it easy for crawlers to find and parse the structured metadata.  
+There is several ways to encode your metadata using JSON-LD the goal of this list is to provide examples and recommendation about how to provide good metadata with a set of recommended properties.
 
 ## Properties
 
 _**(M):** Mandatory, **(R):** Recommended, **(O):** Optional_
 
-To describe a dateset using schema.org the json-ld type must be set to `Dataset` minimal example:
+To describe a dateset using schema.org the JSON-LD type must be set to `Dataset` minimal example:
 
-??? example "Minimal JsonLD Dataset"
-    ```html title="example of JsonLd included in landing page html markup"
+??? example "Minimal JSON-LD Dataset"
+    ```html title="example of JSON-LD included in landing page html markup"
     <script type="application/ld+json">
     {
         "@context":"https://schema.org/",
@@ -30,7 +30,7 @@ To describe a dateset using schema.org the json-ld type must be set to `Dataset`
     }
     </script>
     ```
-For the proerty examples only the value will be listed to make the examples a bit shorter.
+For the property examples only the value will be listed to make the examples a bit shorter.
 
 ### identifier (M)
 
@@ -67,7 +67,7 @@ Used for the title of the dataset, an alternate title exist use the property `al
 ### publisher (M)
 
 Recomended to use a single organization. 
-The `@id` and/or `indetifier` should be ROR-id if availible.
+The `@id` and/or `indentifier` should be ROR-id if available.
 
 ```json title="publisher example"
 {
@@ -152,7 +152,7 @@ Examples:
 ### additionalType (O)
 
 One or multiple additional types to classify the dataset.  
-Can be Url:s or plain text.
+Can be URL:s or plain text.
 
 Examples:  
 `survey`  
@@ -161,13 +161,13 @@ Examples:
 
 ### version (O)
 
-Version number of the dataset if availible.
+Version number of the dataset if available.
 
 Examples:  
 `1`  
 `1.0`
 
-### license (R)
+### licence (R)
 
 URL to the licence for the dataset.
 
@@ -205,8 +205,8 @@ If the dataset contains multiple files in a hierarchical structure provide the r
 
 ### spatialCoverage (O)
 
-Geographical coverage of the dataset, can be a named place or place with cooridnates.
-For `@id` use url to the named place on [geonames.org](https://www.geonames.org)
+Geographical coverage of the dataset, can be a named place or place with coordinates.
+For `@id` use URL to the named place on [geonames.org](https://www.geonames.org)
 
 ```json title="example of some ways to add spatial coverage"
 [
@@ -242,10 +242,10 @@ The time period the dataset covers.
 Use ISO-datetime for single date/time or timespan.
 
 Examples  
-`2024-03-15` sigle date no timespan  
+`2024-03-15` single date no timespan  
 `2020/2024` timespan from 2020 until 2024  
 `2020/..` from 2020 open ended  
-`http://n2t.net/ark:/99152/p0qhb66skwk` "stenålder 10200 BP (2000) – 3800 BP (2000) | Sweden" by refering to a specified time period from [perio.do](https://perio.do)
+`http://n2t.net/ark:/99152/p0qhb66skwk` "stenålder 10200 BP (2000) – 3800 BP (2000) | Sweden" by referring to a specified time period from [perio.do](https://perio.do)
 
 
 ### funding (O)
@@ -253,7 +253,7 @@ Examples
 Describes the grant(s) for funding the dataset.
  
 Example:  
-```json title="example of a grant from VR linking to the post in Swecris"
+```json title="example of a grant from VR linking to the post in SweCRIS"
 [
     {
         "@type": "Grant",
