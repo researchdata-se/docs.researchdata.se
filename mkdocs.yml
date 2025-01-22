@@ -1,4 +1,4 @@
-site_name: Researchdata.se (🚧draft)
+site_name: docs.researchdata.se
 repo_url: https://github.com/researchdata-se/docs.researchdata.se/
 edit_uri: edit/main/docs/
 
@@ -14,7 +14,6 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-
 
 markdown_extensions:
   - admonition

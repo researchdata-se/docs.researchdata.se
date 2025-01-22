@@ -24,7 +24,7 @@ The unique identifier for this version of the resource.
 ```xml title="identifier example"
 <identifier identifierType="DOI">10.123/245.67</identifier>
 ```
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/identifier/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/identifier/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_identifier.html)
 
 --------------
@@ -57,7 +57,7 @@ The person(-s) and/or organization(-s) involved in creating the resource, in pri
 </creators>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/creator/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_creator.html)
 
 --------------
@@ -71,7 +71,7 @@ A name or title by which a resource is known (occurrences: 1-n).
   <title xml:lang="en">Example title</title>
 </titles>
 ```
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/title/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/title/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_title.html)
 
 --------------
@@ -84,7 +84,7 @@ The name of the entity that holds, archives, publishes prints, distributes, rele
 ```xml title="publisher example"
 <publisher xml:lang="en" publisherIdentifier="https://ror.org/058zxsr17" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Bolin Centre for Climate Research</publisher>
 ```
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/publisher/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_publisher.html)
 
 --------------
@@ -97,7 +97,7 @@ The year when the resource was or will be made publicly available. (occurrences:
 <publicationYear>2024</publicationYear>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publicationyear/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/publicationyear/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_publicationyear.html)
 
 --------------
@@ -115,7 +115,7 @@ Subject, keyword, classification code, or key phrase describing the resource (oc
 </subjects>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/subject/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/subject/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_subject.html)
 
 --------------
@@ -136,22 +136,25 @@ The institution or person responsible for collecting, managing, distributing, or
 </contributors>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/contributor/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/contributor/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_contributor.html)
 
 --------------
 
 ### Date (M)
 
-Different dates relevant to the work (occurrences: 0-n).
+Different dates relevant to the work (occurrences: 0-n).  
+Coverage date is defined as a date span separated by `/`.  
+List of dateType: [dateTypes at datacite](https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/dateType/)
 
 ```xml title="date example"
 <dates>
   <date dateType="Issued">2024-01-05</date>
+  <date dateType="Coverage">2022-08-01/2025-01-02</date>
 </dates>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/date/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/date/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_date.html)
 
 --------------
@@ -159,13 +162,13 @@ Different dates relevant to the work (occurrences: 0-n).
 ### Language (R)
 
 The primary language of the resource (occurrences: 0-1).  
-ISO 639-1 language codes. Examples: en, sv, de.
+ISO 639-1 language codes. Examples: `en`, `sv`, `de`.
 
 ```xml  title="language example"
 <language>en</language>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/language/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/language/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_language.html)
 
 --------------
@@ -178,7 +181,7 @@ A description of the resource (occurrences: 0-1).
 <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/resourcetype/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/resourcetype/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_resourcetype.html)
 
 --------------
@@ -193,7 +196,7 @@ An identifier or identifiers other than the primary Identifier applied to the re
 </alternateIdentifiers>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/alternateidentifier/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/alternateidentifier/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_alternateidentifier.html)
 
 --------------
@@ -209,7 +212,7 @@ Identifiers of related resources. These must be globally unique identifiers (occ
 </relatedIdentifiers>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/relatedidentifier/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/relatedidentifier/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_relatedidentifier.html)
 
 
@@ -225,7 +228,7 @@ Technical format of the resource. (occurrences: 0-n).
 </formats>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/format/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/format/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_format.html)
 
 --------------
@@ -238,7 +241,7 @@ The version number of the resource (occurrences: 0-1).
 <version>2</version>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/version/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/version/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_version.html)
 
 
@@ -257,7 +260,7 @@ Its recomended to describe the access level by using [info:eu-repo-Access-Terms 
 </rightsList>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/rights/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/rights/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_rights.html)
 
 --------------
@@ -280,7 +283,7 @@ A brief summary of the resource. May also be used for technical information. (oc
 </descriptions>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/description/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/description/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_description.html)
 
 --------------
@@ -299,7 +302,7 @@ Spatial region or named place where the data contained in the resource was gathe
 </geoLocations>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/geolocation/) |
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/geolocation/) |
 [OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_geolocation.html)
 
 
@@ -320,7 +323,7 @@ Information about financial support (funding) for the resource being registered 
 </fundingReferences>
 ```
 
-[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/fundingreference/)
+[Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/fundingreference/)
 
 --------------
 

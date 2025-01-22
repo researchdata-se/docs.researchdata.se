@@ -9,7 +9,7 @@ For harvesting the portal suports DataCite XML and schema.org JSON-LD.
 
     ---
 
-    Structured metadata in xml with recomended fields from DataCite 4.5.
+    Structured metadata in xml with recomended fields from DataCite 4.6.
 
     ➡️ [More information](./datacite-xml.md)
 
