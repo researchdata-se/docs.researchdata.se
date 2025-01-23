@@ -11,9 +11,14 @@ theme:
     - search.suggest
   icon:
     edit: material/pencil
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
   font:
     text: Roboto
     code: Roboto Mono
+
+extra_css:
+  - assets/css/colors.css
 
 markdown_extensions:
   - admonition
