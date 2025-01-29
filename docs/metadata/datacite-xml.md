@@ -1,14 +1,5 @@
 # DataCite XML
 
-<div class="grid cards" markdown>
--   🚧 __Draft list__
-
-    ---
-
-    This list of fields is a draft. 
-    Discussions in the [issue tracker](https://github.com/researchdata-se/docs.researchdata.se/issues/1)  
-</div>
-
 When a DOI is registred via DataCite metadata is provided.   
 This metadata is harvestable via DataCites [OAI-PMH](../harvesting/oai-pmh.md) endpoint.
 
