@@ -377,6 +377,41 @@ Example term:
         }
         ```
 
+### LCSH - Library of Congress Subject Headings
+[http://id.loc.gov/authorities/subjects/](http://id.loc.gov/authorities/subjects/)  
+     
+Example term:  
+[https://id.loc.gov/authorities/subjects/sh2009009655](https://id.loc.gov/authorities/subjects/sh2009009655) 
+
+??? example "Example usage"
+    === "DataCite"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="Library of Congress Subject Headings (LCSH)" 
+            schemeURI="https://id.loc.gov/authorities/subjects/" 
+            valueURI="https://id.loc.gov/authorities/subjects/sh2009009655"
+            classificationCode="sh2009009655" 
+            xml:lang="en">Climate change mitigation</subject>
+        </subjects>
+        ```
+    === "JsonLd"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "https://id.loc.gov/authorities/subjects/sh2009009655",
+                    "inDefinedTermSet": "https://id.loc.gov/authorities/subjects/",
+                    "termCode": "sh2009009655",
+                    "name": "Climate change mitigation"
+                }
+            ]
+        }
+        ```
+
 ### MeSH Medical Subject Headings 
 [https://www.nlm.nih.gov/mesh](https://www.nlm.nih.gov/mesh)  
      
