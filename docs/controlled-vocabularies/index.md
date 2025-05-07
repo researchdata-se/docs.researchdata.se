@@ -519,12 +519,12 @@ Examples:
 
 ## Language
 
-[Use ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language codes. Examples: en, de, sv
+[Use ISO 639-3](https://en.wikipedia.org/wiki/ISO_639-3) language codes. Examples: eng, deu, swe
 
 ??? example "Example usage"
     === "DataCite"
         ```xml
-        <language>en</language>
+        <language>eng</language>
         ```
     === "JsonLd"
         ```json
@@ -534,7 +534,7 @@ Examples:
             "inLanguage": {
                 "@type": "Language",
                 "name": "Swedish",
-                "identifier": "sv"
+                "identifier": "swe"
             }
         }
         ```

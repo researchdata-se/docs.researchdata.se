@@ -133,17 +133,17 @@ Example
 
 The primary language(s) in of the resource. u
 Range text literal or [schema.org/Language](https://schema.org/Language)  
-Use `ISO 639-1`, `ISO 639-2` or `ISO 639-3` codes as identifier
+Use  `ISO 639-3` or `ISO 639-1`, `ISO 639-2` codes as identifier
 
 Examples:  
-`en`  
-`sv`  
+`eng`  
+`swe`  
 
 ```json title="schema.org/Language example"
 [
     {
         "@type":"Language",
-        "identifier": "en",
+        "identifier": "eng",
         "name":"English",
     }
 ]

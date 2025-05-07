@@ -153,10 +153,10 @@ List of dateType: [dateTypes at datacite](https://datacite-metadata-schema.readt
 ### Language (R)
 
 The primary language of the resource (occurrences: 0-1).  
-ISO 639-1 language codes. Examples: `en`, `sv`, `de`.
+ISO 639-3 language codes. Examples: `eng`, `swe`, `deu`.
 
 ```xml  title="language example"
-<language>en</language>
+<language>eng</language>
 ```
 
 [Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/language/) |
