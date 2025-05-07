@@ -21,4 +21,12 @@ For harvesting the portal suports DataCite XML and schema.org JSON-LD.
 
     ➡️ [More information](./schema-org-json-ld.md)
 
+-   📄 __Landing page metadata__
+
+    ---
+
+    recomendations for metadata exposure on the resource landing page.
+
+    ➡️ [More information](./landing-page.md)
+
 </div>
