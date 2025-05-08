@@ -6,6 +6,10 @@ This is the recomended way to provide metadata to the catalogue on researchdata.
 A oai-pmh endpoint must be able describe each resource in `oai_dc` (dublin core). Additional parallell metadata formats is recomended.  
 For researchdata.se [DataCite XML](../metadata/datacite-xml.md) is required.
 
+## Researchdata.se OAI-PMH endpoint
+The OAI-PMH endpoint for harvesting metadata from researchdata.se is:  
+[https://api.researchdata.se/oai-pmh](https://api.researchdata.se/oai-pmh?verb=Identify)
+
 ## OAI-PMH via DataCite
 If the repository registers DOI:s via DataCite all metadata will be harvestable via a OAI-PMH set on `oai.datacite.org` some example sets:  
 
