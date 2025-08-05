@@ -103,7 +103,8 @@ Example:
 ```json title="keyword example"
 [
     "Health",
-    "http://id.nlm.nih.gov/mesh/D014943"
+    "http://id.nlm.nih.gov/mesh/D014943",
+    "https://begrepp.uka.se/SSIF/303"
 ]
 ```
 

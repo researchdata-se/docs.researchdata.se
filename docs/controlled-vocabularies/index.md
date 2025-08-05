@@ -450,7 +450,7 @@ Example term:
 ### NASA Thesaurus NASA STI Thesaurus 
 [https://sti.nasa.gov/nasa-thesaurus](https://sti.nasa.gov/nasa-thesaurus)
 
-### Standard för svensk indelning av forskningsämnen 2011
+### Standard för svensk indelning av forskningsämnen 2025
 
 [https://www.scb.se/dokumentation/klassifikationer-och-standarder/standard-for-svensk-indelning-av-forskningsamnen/](https://www.scb.se/dokumentation/klassifikationer-och-standarder/standard-for-svensk-indelning-av-forskningsamnen/)  
 
@@ -459,10 +459,11 @@ Example term:
     === "DataCite"
         ```xml
         <subjects>
-            <subject 
-            subjectScheme="Standard för svensk indelning av forskningsämnen 2011" 
-            schemeURI="https://id.kb.se/term/ssif" 
-            classificationCode="105" 
+            <subject
+            subjectScheme="Standard för svensk indelning av forskningsämnen 2025"
+            schemeURI="https://begrepp.uka.se/SSIF/"
+            classificationCode="105"
+            valueURI="https://begrepp.uka.se/SSIF/105"
             xml:lang="en">Earth and Related Environmental Sciences</subject>
         </subjects>
         ```
@@ -474,7 +475,8 @@ Example term:
             "keywords": [
                 {
                     "@type": "DefinedTerm",
-                    "inDefinedTermSet": "https://id.kb.se/term/ssif",
+                    "@id": "https://begrepp.uka.se/SSIF/105",
+                    "inDefinedTermSet": "https://begrepp.uka.se/SSIF/",
                     "termCode": "105",
                     "name": "Earth and Related Environmental Sciences"
                 }

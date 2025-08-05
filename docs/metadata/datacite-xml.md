@@ -102,7 +102,7 @@ Subject, keyword, classification code, or key phrase describing the resource (oc
   <subject xml:lang="en" subjectScheme="Library of Congress Subject Headings (LCSH)" schemeURI="https://id.loc.gov/authorities/subjects.html" valueURI="https://id.loc.gov/authorities/subjects/sh85083064.html">Medicine</subject>
   <subject subjectScheme="CESSDA Topic Classification" valueURI="https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=ScienceAndTechnology" classificationCode="ScienceAndTechnology" xml:lang="en">SCIENCE AND TECHNOLOGY</subject>
   <subject subjectScheme="MeSH" valueURI="http://id.nlm.nih.gov/mesh/D007091" classificationCode="D007091" xml:lang="en">Image Processing, Computer-Assisted</subject>
-  <subject subjectScheme="Standard för svensk indelning av forskningsämnen 2011" classificationCode="302" xml:lang="en">Clinical Medicine</subject>
+  <subject subjectScheme="Standard för svensk indelning av forskningsämnen 2025" schemeURI="https://begrepp.uka.se/SSIF/" classificationCode="302" valueURI="https://begrepp.uka.se/SSIF/302" xml:lang="en">Clinical Medicine</subject>
 </subjects>
 ```
 
