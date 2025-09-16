@@ -95,7 +95,7 @@ The year when the resource was or will be made publicly available. (occurrences:
 
 ### Subject (M)
 
-Subject, keyword, classification code, or key phrase describing the resource (occurrences: 0-n).
+Subject, keyword, classification code, or key phrase describing the resource (occurrences: 1-n).
 
 ```xml title="subject example"
 <subjects>
@@ -103,6 +103,7 @@ Subject, keyword, classification code, or key phrase describing the resource (oc
   <subject subjectScheme="CESSDA Topic Classification" valueURI="https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=ScienceAndTechnology" classificationCode="ScienceAndTechnology" xml:lang="en">SCIENCE AND TECHNOLOGY</subject>
   <subject subjectScheme="MeSH" valueURI="http://id.nlm.nih.gov/mesh/D007091" classificationCode="D007091" xml:lang="en">Image Processing, Computer-Assisted</subject>
   <subject subjectScheme="Standard för svensk indelning av forskningsämnen 2025" schemeURI="https://begrepp.uka.se/SSIF/" classificationCode="302" valueURI="https://begrepp.uka.se/SSIF/302" xml:lang="en">Clinical Medicine</subject>
+  <subject xml:lang="en">My keyword</subject>
 </subjects>
 ```
 
@@ -132,7 +133,7 @@ The institution or person responsible for collecting, managing, distributing, or
 
 --------------
 
-### Date (M)
+### Date (R)
 
 Different dates relevant to the work (occurrences: 0-n).  
 Coverage date is defined as a date span separated by `/`.  
@@ -166,7 +167,7 @@ ISO 639-3 language codes. Examples: `eng`, `swe`, `deu`.
 
 ### ResourceType (M)
 
-A description of the resource (occurrences: 0-1).
+A description of the resource (occurrences: 1).
 
 ```xml title="resourceType example"
 <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
@@ -258,7 +259,7 @@ Its recomended to describe the access level by using [info:eu-repo-Access-Terms 
 
 ### Description (M)
 
-A brief summary of the resource. May also be used for technical information. (occurrences: 0-n).
+A brief summary of the resource. May also be used for technical information. (occurrences: 1-n).
 
 ```xml title="description example"
 <descriptions>
