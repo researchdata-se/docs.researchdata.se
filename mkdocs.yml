@@ -9,6 +9,7 @@ theme:
     - content.action.edit
     - content.code.copy
     - search.suggest
+    - search.highlight
   icon:
     edit: material/pencil
   logo: assets/images/logo.svg
