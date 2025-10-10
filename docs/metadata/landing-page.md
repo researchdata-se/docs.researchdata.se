@@ -1,11 +1,13 @@
 # Landing page metadata
 
-To make the metadata as machine-readable as possible, the metadata should be exposed in a structured format like schema.org JSON-LD, which is a widely used standard for representing structured data on the web.
-This allows search engines and other applications to easily understand and index the metadata, improving discoverability and accessibility.  
-There is also some additional ways to provide the metadata on the landing page using HTML meta tags and HTTP headers.
+To make the metadata as machine-readable as possible, the metadata should be exposed in a structured format like Schema.org JSON-LD, which is a widely used standard for representing structured data on the web.
+
+This will allow search engines and other applications to easily interpret and index the metadata, improving discoverability and accessibility.
+
+There are also some additional ways for providing the metadata on the landing page: using HTML meta tags and HTTP headers.
 
 ## HTML meta tags
-The metadata can be included in the HTML of the landing page using meta and link tags. This is a common practice for search engine optimization (SEO) and can help improve the visibility of the dataset in search results.
+The metadata may be embedded in the HTML source of the landing page using `<meta>` and `<link>` tags. This is a common practice for search engine optimization (SEO) and can help improving the visibility of the dataset in search results.
 
 ### Example
 ```html
@@ -36,11 +38,12 @@ The metadata can be included in the HTML of the landing page using meta and link
     </body>
 </html>
 ```
-A list of the basic set of meta links can be found here [https://signposting.org/FAIR/#level1](https://signposting.org/FAIR/#level1)
+A list of the basic set of meta links can be found in the FAIR Signposting Profile: [https://signposting.org/FAIR/#level1](https://signposting.org/FAIR/#level1)
 
 ## HTTP headers
-The metadata links can also be included in the HTTP headers of the landing page. This is a less common practice but can be useful for certain applications or services that rely on HTTP headers for metadata.  
-This makes allows applications to discover the metadata without having to parse the HTML of the landing page.
+The metadata links may also be included in the HTTP headers of the landing page. This is a useful, but less common practice. It is especially useful for certain applications or services that mainly rely on HTTP headers for metadata.
+
+Including metadata links in the HTTP headers will allow applications to discover the metadata without having to parse the HTML of the landing page itself.
 
 ### Example
 ```

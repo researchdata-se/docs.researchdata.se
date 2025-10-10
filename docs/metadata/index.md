@@ -1,7 +1,7 @@
 # Introduction
 
 Researchdata.se exposes the metadata in multiple metadata formats.  
-For harvesting the portal suports DataCite XML and schema.org JSON-LD.
+For harvesting metadata, the portal supports DataCite XML and Schema.org JSON-LD.
  
 <div class="grid cards" markdown>
 
@@ -9,7 +9,7 @@ For harvesting the portal suports DataCite XML and schema.org JSON-LD.
 
     ---
 
-    Structured metadata in xml with recomended fields from DataCite 4.6.
+    Structured metadata in XML with recommended fields from DataCite 4.6.
 
     ➡️ [More information](./datacite-xml.md)
 
@@ -17,7 +17,7 @@ For harvesting the portal suports DataCite XML and schema.org JSON-LD.
 
     ---
 
-    Dataset metadata in json-ld included in on the dataset landing pages.
+    Dataset metadata in JSON-LD included on the dataset landing pages.
 
     ➡️ [More information](./schema-org-json-ld.md)
 
@@ -25,7 +25,7 @@ For harvesting the portal suports DataCite XML and schema.org JSON-LD.
 
     ---
 
-    recomendations for metadata exposure on the resource landing page.
+    Recommendations for metadata exposure on the landing page of the resource.
 
     ➡️ [More information](./landing-page.md)
 
