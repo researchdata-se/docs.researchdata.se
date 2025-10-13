@@ -1,13 +1,16 @@
 # Schema.org JSON-LD
 
-Its recommended to include JSON-LD in the html markup to make it easy for crawlers to find and parse the structured metadata.  
-There is several ways to encode your metadata using JSON-LD the goal of this list is to provide examples and recommendation about how to provide good metadata with a set of recommended properties.
+It is recommended to include JSON-LD embedded in the HTML source to make it easy for web crawlers to find and parse the structured metadata.
+
+There are several ways to encode your metadata using JSON-LD. The goal of this list is to provide examples and recommendations on how to provide good metadata, with a set of recommended properties.
 
 ## Properties
 
 _**(M):** Mandatory, **(R):** Recommended, **(O):** Optional_
 
-To describe a dateset using schema.org the JSON-LD type must be set to `Dataset` minimal example:
+To describe a dateset using Schema.org, the JSON-LD type must be set to `Dataset`.
+
+Minimal example:
 
 ??? example "Minimal JSON-LD Dataset"
     ```html title="example of JSON-LD included in landing page html markup"
@@ -30,16 +33,20 @@ To describe a dateset using schema.org the JSON-LD type must be set to `Dataset`
     }
     </script>
     ```
-For the property examples only the value will be listed to make the examples a bit shorter.
+
+For the property examples, only the value will be listed to make the examples a bit shorter.
 
 ### identifier (M)
 
 Single or multiple values for identifiers for local or global identifiers for the dataset.
-Can be `text`, `url` or a set of `PropertyValue` 
+Can be `text`, `url` or a set of `PropertyValue`. 
 
 ### creator (M)
 
-Example  
+One or multiple [Organization](https://schema.org/Organization)(s) and/or [Person](https://schema.org/Person)(s).
+
+
+Example:
 ```json title="list of creators"
 [
     {
@@ -56,18 +63,17 @@ Example
 ]
 ```
 
-One or multiple [Organization]() and/or [Person]()
 
 [Reference](https://schema.org/creator)
 
 ### name (M)
 
-Used for the title of the dataset, an alternate title exist use the property `alternateName`.
+Used for the title of the dataset. If an alternate title exists, use the property `alternateName`.
 
 ### publisher (M)
 
-Recomended to use a single organization. 
-The `@id` and/or `indentifier` should be ROR-id if available.
+It is recommended to use a single organisation. 
+The `@id` and/or `identifier` should be ROR ID if available.
 
 ```json title="publisher example"
 {
@@ -110,7 +116,7 @@ Example:
 
 ### contributor (O)
 
-Person(s) and / or organisation(s) with a contributor role to the dataset.
+Person(s) and / or organisation(s) with a contributor role for the dataset.
 
 Example  
 ```json title="list of contributors"
@@ -132,8 +138,8 @@ Example
 
 ### inLanguage (R)
 
-The primary language(s) in of the resource. u
-Range text literal or [schema.org/Language](https://schema.org/Language)  
+The primary language(s) in of the resource.  
+Range: text literal or [Language](https://schema.org/Language)  
 Use  `ISO 639-3` or `ISO 639-1`, `ISO 639-2` codes as identifier
 
 Examples:  
@@ -179,12 +185,12 @@ Examples:
 
 ### description (M)
 
-Plain text description of the dataset. Should contains a short abstract and any general technical information about the dataset.
+Plain text description of the dataset. Should contain a short abstract and any general technical information about the dataset.
 
 ### distribution (R)
 
 Describes and links to the files in the dataset.  
-If the dataset contains multiple files in a hierarchical structure provide the relative path in `name`. e.g. `images/2024-03-14.jpg`.
+If the dataset contains multiple files in a hierarchical structure, provide the relative path in `name`. E.g. `images/2024-03-14.jpg`.
 
 ```json title="list of files in the dataset"
 [
@@ -206,8 +212,8 @@ If the dataset contains multiple files in a hierarchical structure provide the r
 
 ### spatialCoverage (O)
 
-Geographical coverage of the dataset, can be a named place or place with coordinates.
-For `@id` use URL to the named place on [geonames.org](https://www.geonames.org)
+Geographical coverage of the dataset. May be a named place or place with coordinates.
+For `@id` use URL for the named place on [geonames.org](https://www.geonames.org).
 
 ```json title="example of some ways to add spatial coverage"
 [
@@ -239,7 +245,7 @@ For `@id` use URL to the named place on [geonames.org](https://www.geonames.org)
 
 ### temporalCoverage (O)
 
-The time period the dataset covers.  
+The time period that the dataset covers.  
 Use ISO-datetime for single date/time or timespan.
 
 Examples  

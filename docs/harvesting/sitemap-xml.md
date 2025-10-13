@@ -1,6 +1,6 @@
-# sitemap.xml
+# XML sitemap (sitemap.xml)
 
-The repository `sitemap.xml` should list all the url:s for the latest version of each dataset in the catalogue:
+The repository `sitemap.xml` should list all the URL:s for the latest version of each dataset in the catalogue:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -17,15 +17,15 @@ The repository `sitemap.xml` should list all the url:s for the latest version of
 __Example sitemap.xml__
 
 * [fieldsites.se](https://meta.fieldsites.se/sitemap.xml)
-* [snd catalogue](https://snd.gu.se/en/catalogue/sitemap.xml)
+* [Researchdata.se catalogue](https://researchdata.se/en/sitemap.xml)
 
 More information about sitemap.xml can be found on the official webpage: [sitemaps.org](https://www.sitemaps.org)
 
-On the landing page for each dataset the resource metadata should be availible as [schema.org json-ld](../metadata/schema-org-json-ld.md).
+ The resource metadata should be available as [Schema.org JSON-LD](../metadata/schema-org-json-ld.md) on the landing page of each dataset.
 
 ## robots.txt
 
-The repository should implement a sitemap.xml endpoint to provide webcrawlers to find and index the landing page for each dataset. The url to sitemap.xml should be added to `robots.txt` for example:
+The repository should implement a sitemap.xml endpoint. This will make it possible for web crawlers to find and index the landing page for each dataset. The URL pointing to sitemap.xml should be added to `robots.txt`, for example:
 
 ```markdown
 # robots.txt

@@ -1,7 +1,8 @@
 # DataCite XML
 
-When a DOI is registred via DataCite metadata is provided.   
-This metadata is harvestable via DataCites [OAI-PMH](../harvesting/oai-pmh.md) endpoint.
+When a DOI is registered using DataCite, metadata following at least the mandatory requirements of the DataCite Metadata Schema must be provided. Metadata may also be updated after registration.  
+
+The metadata for DataCite DOI:s are harvestable using DataCites [OAI-PMH](../harvesting/oai-pmh.md) endpoint.
 
 
 ## Metadata fields

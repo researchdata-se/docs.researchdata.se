@@ -1,7 +1,8 @@
 # Introduction
 
-To be able to harvest dataset metadata from a repository a machine acionable way to access the metadata is needed.
-To avoid a researchdata.se-specific method we recomends estabilised standards like DataCite XML via [OAI-PMH](oai-pmh.md) and/or schema.org json-ld one the landing page via [sitemap.xml](sitemap-xml.md).
+For Researchdata.se to be able to harvest dataset metadata from a data source such as a repository, a machine actionable way to access the metadata is needed.
+
+To avoid a Researchdata.se-specific method, we recommend using established metadata standards like DataCite XML via [OAI-PMH](oai-pmh.md) and/or Schema.org JSON-LD one the landing page via [sitemap.xml](sitemap-xml.md).
 
 ## Harvesting flow 
 *(work in progress)*

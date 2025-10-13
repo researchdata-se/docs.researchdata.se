@@ -1,11 +1,14 @@
-# Introduction
-
-Controlled vocabularies for metadata play a crucial role in systematically organizing and managing information, particularly in the context of datasets.
+# Controlled vocabularies
+Controlled vocabularies for metadata play a crucial role in systematically organising and managing information, particularly in the context of datasets.
 A controlled vocabulary consists of predefined terms with assigned meanings, ensuring consistency when describing and categorizing information.
+
+In addition, persistent identifiers (PIDs) are used to provide robust links and avoid disambiguation when referring to definitions of individuals, organisations or places, and may also be used in a similar manner.
+
+A selection of best practices regarding controlled vocabularies and persistent identifiers are listed below. These will make it more likely that Researchdata.se will be able to reuse the metadata when harvesting from a data source. 
 
 ## Organisations
 
-For organsations [ROR-id](https://ror.org) is prefered to identify the organization.
+For organisations, providing a [ROR ID](https://ror.org) PID is the preferred method for identifying the organisation.
 
 Examples:  
 `https://ror.org/05ynxx418`  
@@ -14,7 +17,7 @@ Examples:
 
 ## Persons
 
-To identify a person use [ORCID](https://orcid.org).  
+To identify a person, use [ORCID](https://orcid.org), a PID for researchers and other contributors.  
 
 Examples:  
 `https://orcid.org/0000-0002-9227-8514`
@@ -23,16 +26,16 @@ Examples:
 
 ## Subjects & keywords
 
-There is multiple vocabularies used to catagorize and tag resources, some of them covers several diciplines while some of them are specific to a limited set of research domains.
+There are multiple vocabularies used to categorise and tag resources. Some of them cover several disciplines, while others are specific to a limited set of research domains.
 
-### AAT The art & Architecture Thesaurus  
+### AAT – The Art & Architecture Thesaurus  
 [https://www.getty.edu/research/tools/vocabularies/aat/](https://www.getty.edu/research/tools/vocabularies/aat/)  
      
 Example term:  
 [http://vocab.getty.edu/page/aat/300191918](http://vocab.getty.edu/page/aat/300191918)
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -43,7 +46,7 @@ Example term:
             xml:lang="en">Asian coins</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -60,14 +63,14 @@ Example term:
         }
         ```
 
-### AGROVOC Vocabulary for Agricultural Sciences 
+### AGROVOC – Vocabulary for Agricultural Sciences 
 [https://agrovoc.fao.org/browse/agrovoc](https://agrovoc.fao.org/browse/agrovoc)  
      
 Example term:  
 [http://aims.fao.org/aos/agrovoc/c_2536](http://aims.fao.org/aos/agrovoc/c_2536)  
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -78,7 +81,7 @@ Example term:
             xml:lang="en">elks</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -95,7 +98,7 @@ Example term:
         }
         ```
 
-### ALLFO Allmän finländsk ontologi 
+### ALLFO – Allmän finländsk ontologi 
 [https://finto.fi/yso](https://finto.fi/yso)  
      
 Example term:  
@@ -103,7 +106,7 @@ Example term:
 
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -114,7 +117,7 @@ Example term:
             xml:lang="en">elk</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -131,14 +134,14 @@ Example term:
         }
         ```
 
-### ELSST The European Language Social Science Thesaurus 
+### ELSST – The European Language Social Science Thesaurus 
 [https://elsst.cessda.eu](https://elsst.cessda.eu)  
      
 Example term:  
 [https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f](https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f) 
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -149,7 +152,7 @@ Example term:
             xml:lang="en">ENVIRONMENT</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -167,14 +170,14 @@ Example term:
         ```
 
 
-### EnvThes Environmental Thesaurus
+### EnvThes – Environmental Thesaurus
 [https://vocabs.lter-europe.net/envthes](https://vocabs.lter-europe.net/envthes)  
 
 Example term:  
 [http://vocabs.lter-europe.net/EnvThes/20800](http://vocabs.lter-europe.net/EnvThes/20800)  
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -185,7 +188,7 @@ Example term:
             xml:lang="en">aluminum</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -202,14 +205,14 @@ Example term:
         }
         ```
 
-### FISH Monument Types FISH Thesaurus Monument Types 
+### FISH Thesaurus of Monument Types
 [https://collectionstrust.org.uk/resource/thesaurus-of-monument-types-fish](https://collectionstrust.org.uk/resource/thesaurus-of-monument-types-fish)   
 
 Example term:  
 [http://purl.org/heritagedata/schemes/560/concepts/142104](http://purl.org/heritagedata/schemes/560/concepts/142104)  
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -220,7 +223,7 @@ Example term:
             xml:lang="en">Archaeomagnetism</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -244,7 +247,7 @@ Example term:
 [https://gcmd.earthdata.nasa.gov/kms/concept/b3b14df8-5197-4a26-ae61-882fdba706f3](https://gcmd.earthdata.nasa.gov/kms/concept/b3b14df8-5197-4a26-ae61-882fdba706f3) 
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -255,7 +258,7 @@ Example term:
             xml:lang="en">FOOD STORAGE</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -272,14 +275,14 @@ Example term:
         }
         ```
 
-### GEMET General Multilingual Environmental Thesaurus 
+### GEMET – General Multilingual Environmental Thesaurus 
 [http://www.eionet.europa.eu/gemet/](http://www.eionet.europa.eu/gemet) 
 
 Example term:  
 [http://www.eionet.europa.eu/gemet/concept/1500](http://www.eionet.europa.eu/gemet/concept/1500)  
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -290,7 +293,7 @@ Example term:
             xml:lang="en">coal</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -307,14 +310,14 @@ Example term:
         }
         ```
 
-### ICD-10 International Classification of Diseases 
+### ICD-10 – International Classification of Diseases 
 [https://icd.who.int/browse10/2019/en](https://icd.who.int/browse10/2019/en)
 
 Example term:  
 [https://icd.who.int/browse10/2019/en#/I20-I25](https://icd.who.int/browse10/2019/en#/I20-I25)
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -325,7 +328,7 @@ Example term:
             xml:lang="en">Ischaemic heart diseases</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -349,7 +352,7 @@ Example term:
 [http://inspire.ec.europa.eu/glossary/Aqueduct](http://inspire.ec.europa.eu/glossary/Aqueduct)
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -360,7 +363,7 @@ Example term:
             xml:lang="en">Aqueduct</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -377,14 +380,14 @@ Example term:
         }
         ```
 
-### LCSH - Library of Congress Subject Headings
+### LCSH – Library of Congress Subject Headings
 [http://id.loc.gov/authorities/subjects/](http://id.loc.gov/authorities/subjects/)  
      
 Example term:  
 [https://id.loc.gov/authorities/subjects/sh2009009655](https://id.loc.gov/authorities/subjects/sh2009009655) 
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -395,7 +398,7 @@ Example term:
             xml:lang="en">Climate change mitigation</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -412,14 +415,14 @@ Example term:
         }
         ```
 
-### MeSH Medical Subject Headings 
+### MeSH – Medical Subject Headings 
 [https://www.nlm.nih.gov/mesh](https://www.nlm.nih.gov/mesh)  
      
 Example term:  
 [http://id.nlm.nih.gov/mesh/D003069](http://id.nlm.nih.gov/mesh/D003069) 
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject 
@@ -430,7 +433,7 @@ Example term:
             xml:lang="en">Coffee</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -447,16 +450,16 @@ Example term:
         }
         ```
 
-### NASA Thesaurus NASA STI Thesaurus 
+### NASA Thesaurus / NASA STI Thesaurus 
 [https://sti.nasa.gov/nasa-thesaurus](https://sti.nasa.gov/nasa-thesaurus)
 
-### Standard för svensk indelning av forskningsämnen 2025
+### SSIF 2025 – Standard för svensk indelning av forskningsämnen 2025
 
 [https://www.scb.se/dokumentation/klassifikationer-och-standarder/standard-for-svensk-indelning-av-forskningsamnen/](https://www.scb.se/dokumentation/klassifikationer-och-standarder/standard-for-svensk-indelning-av-forskningsamnen/)  
 
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <subjects>
             <subject
@@ -467,7 +470,7 @@ Example term:
             xml:lang="en">Earth and Related Environmental Sciences</subject>
         </subjects>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -487,7 +490,7 @@ Example term:
 ## Geography
 
 ### Geonames
-Popular vocabulary for countries and lower geographical places.
+Commonly used identifier service for countries, regions, cities, and other places.
 
 Examples:  
 `https://sws.geonames.org/2661886/` - Sweden  
@@ -495,7 +498,7 @@ Examples:
 `https://sws.geonames.org/2701727/`- Karlshamn  
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <geoLocations>
             <geoLocation>
@@ -503,7 +506,7 @@ Examples:
             </geoLocation>
         </geoLocations>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -521,14 +524,15 @@ Examples:
 
 ## Language
 
-[Use ISO 639-3](https://en.wikipedia.org/wiki/ISO_639-3) language codes. Examples: eng, deu, swe
+[Use ISO 639-3](https://en.wikipedia.org/wiki/ISO_639-3) language codes.  
+Examples: eng, deu, swe  
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <language>eng</language>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -543,8 +547,8 @@ Examples:
 
 ## License
 
-Recomendations for open licenses in a swedish context see  
-["Rekommendation om öppna licenser och immaterialrätt"](https://www.digg.se/kunskap-och-stod/oppna-och-delade-data/offentliga-aktorer/rekommendation-om-oppna-licenser-och-immaterialratt)
+For recommendations on open licenses and marks in a Swedish context, see the following summary by Digg:  
+[Rekommendation om öppna licenser och immaterialrätt](https://www.digg.se/kunskap-och-stod/oppna-och-delade-data/offentliga-aktorer/rekommendation-om-oppna-licenser-och-immaterialratt)
 
 [SPDX License List](https://spdx.org/licenses/)
 
@@ -553,7 +557,7 @@ Examples:
 `https://creativecommons.org/licenses/by/4.0/`
 
 ??? example "Example usage"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <rightsList>
             <rights 
@@ -565,7 +569,7 @@ Examples:
             Creative Commons Zero v1.0 Universal</rights>
         </rightsList>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",
@@ -576,16 +580,16 @@ Examples:
 
 ## Dataset type
 
-To mark a specific type of Dataset the EU Vocabulary [Dataset Type](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type) provides a way to classify a dataset as syntetic data, test data etc.
+To mark a specific type of dataset, the EU Vocabulary [Dataset Type](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type) provides a way to classify a dataset as syntetic data, test data etc.
 
-A good use case for providing a data set type is to mark syntetic datasets.
+A good use case for providing a dataset type is to mark syntetic datasets.
 
 ??? example "Example for syntetic data"
-    === "DataCite"
+    === "DataCite XML"
         ```xml
         <resourceType resourceTypeGeneral="Dataset">SYNTHETIC_DATA</resourceType>
         ```
-    === "JsonLd"
+    === "Schema.org JSON-LD"
         ```json
         {
             "@context":"https://schema.org/",

@@ -1,11 +1,16 @@
-# API for researchdata.se
-The official REST API for researchdata.se is currently under development but there is a OAI-PMH endpoint available for harvesting the metadata in multiple formats and a RSS feed for search results.
+# API for Researchdata.se
+The official REST API for Researchdata.se is currently under development.
+
+Additional methods are available for accessing metadata:  
+
+* an OAI-PMH endpoint available for harvesting the metadata in multiple formats 
+* a RSS feed for search results.
 
 Information about the REST API development will be published on this page when it is available.
 
 
 ## OAI-PMH
-All records in the catalogue are available via [OAI-PMH](https://www.openarchives.org/OAI/openarchivesprotocol.html). The OAI-PMH endpoint for harvesting metadata from researchdata.se is:
+All records in the catalogue are available via [OAI-PMH](https://www.openarchives.org/OAI/openarchivesprotocol.html). The OAI-PMH endpoint for harvesting metadata from Researchdata.se is:
 [https://api.researchdata.se/oai-pmh](https://api.researchdata.se/oai-pmh?verb=Identify)
 
 The following metadata formats are available:  
@@ -16,14 +21,15 @@ The following metadata formats are available:
 - `ddi33` [DDI-L 3.3](https://ddialliance.org/ddi-lifecycle#v3.3)  
 
 The metadata can be harvested in sets.  
-Currently there is sets availible for: subjects and research principal organization.
+Currently there are sets available for: Subjects and Research principal (organisation).
 
 List of sets: [https://api.researchdata.se/oai-pmh?verb=ListSets](https://api.researchdata.se/oai-pmh?verb=ListSets)
 
 ## Search results as RSS feed
-The search results on researchdata.se is available as a RSS feed.
-All the filters from the search page can be used to create a RSS feed.
-The feed is availible in both english and swedish:   
+The search results on Researchdata.se is available as a RSS feed.
+All of the filters from the search page can be used to create a RSS feed.
+The feed is available in both English and Swedish:  
+
 English : [https://researchdata.se/en/catalogue/search.rss](https://researchdata.se/en/catalogue/search.rss)  
 Swedish : [https://researchdata.se/sv/catalogue/search.rss](https://researchdata.se/sv/catalogue/search.rss)
 
