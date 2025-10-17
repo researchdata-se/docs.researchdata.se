@@ -246,10 +246,8 @@ Its recomended to describe the access level by using [info:eu-repo-Access-Terms 
 
 ```xml title="rights example"
 <rightsList>
-  <rights rightsURI=”info:eu-repo/semantics/openAccess” />
-  <rights rightsURI=”http://creativecommons.org/licenses/by/4.0/”>
-    Creative Commons Attribution 4.0 International
-  </rights>
+  <rights rightsURI="info:eu-repo/semantics/openAccess" />
+  <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
 </rightsList>
 ```
 

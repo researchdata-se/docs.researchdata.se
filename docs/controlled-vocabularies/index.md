@@ -564,7 +564,7 @@ Examples:
             ml:lang="en" 
             schemeURI="https://spdx.org/licenses/" 
             rightsIdentifierScheme="SPDX" 
-            rightsIdentifier=" CC0-1.0" 
+            rightsIdentifier="CC0-1.0" 
             rightsURI="https://creativecommons.org/publicdomain/zero/1.0/">
             Creative Commons Zero v1.0 Universal</rights>
         </rightsList>
