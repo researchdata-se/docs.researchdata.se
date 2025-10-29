@@ -18,7 +18,8 @@ The following metadata formats are available:
 - `datacite` [DataCite XML](https://schema.datacite.org)  
 - `dcat` DCAT following the [DCAT-AP-SE 3.0 specification](https://docs.dataportal.se/dcat/en/)  
 - `ddi25` [DDI-C 2.5](https://ddialliance.org/ddi-codebook#v2.5)  
-- `ddi33` [DDI-L 3.3](https://ddialliance.org/ddi-lifecycle#v3.3)  
+- `ddi33` [DDI-L 3.3](https://ddialliance.org/ddi-lifecycle#v3.3)
+- `cmdi` [CMDI](https://www.clarin.eu/content/cmdi-component-metadata-infrastructure)  
 
 The metadata can be harvested in sets.  
 Currently there are sets available for: Subjects and Research principal (organisation).
