@@ -539,6 +539,7 @@ Examples: eng, deu, swe
             "@type": "Dataset",
             "inLanguage": {
                 "@type": "Language",
+                "@id": "http://lexvo.org/id/iso639-3/swe",
                 "name": "Swedish",
                 "identifier": "swe"
             }
