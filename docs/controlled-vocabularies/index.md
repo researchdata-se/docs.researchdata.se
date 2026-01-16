@@ -133,6 +133,43 @@ Example term:
             ]
         }
         ```
+### Category for high-value datasets
+[https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category)  
+
+Used to classify high-value datasets. These catagories are used in the EU Open Data Portal to identify datasets that are considered high-value according to the EU Data portal.  
+These ceategories are also used for the swedish data portal dataportal.se:  [https://docs.dataportal.se/dcat/en/#5.5](https://docs.dataportal.se/dcat/en/#5.5)  
+
+Example term:  
+[http://data.europa.eu/bna/c_dd313021](http://data.europa.eu/bna/c_dd313021)  
+
+??? example "Example usage"
+    === "DataCite XML"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="Category for high-value datasets" 
+            schemeURI="http://data.europa.eu/bna/asd487ae75" 
+            valueURI="http://data.europa.eu/bna/c_dd313021"
+            classificationCode="c_dd313021" 
+            xml:lang="en">Earth observation and environment</subject>
+        </subjects>
+        ```
+    === "Schema.org JSON-LD"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://data.europa.eu/bna/c_dd313021",
+                    "inDefinedTermSet": "http://data.europa.eu/bna/asd487ae75",
+                    "termCode": "c_dd313021",
+                    "name": "Earth observation and environment"
+                }
+            ]
+        }
+        ```
 
 ### ELSST – The European Language Social Science Thesaurus 
 [https://elsst.cessda.eu](https://elsst.cessda.eu)  
