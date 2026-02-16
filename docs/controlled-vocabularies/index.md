@@ -133,7 +133,7 @@ Example term:
             ]
         }
         ```
-### Category for high-value datasets
+### High-value dataset categories
 [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category)  
 
 Used to classify high-value datasets. These catagories are used in the EU Open Data Portal to identify datasets that are considered high-value according to the EU Data portal.  
@@ -147,7 +147,7 @@ Example term:
         ```xml
         <subjects>
             <subject 
-            subjectScheme="Category for high-value datasets" 
+            subjectScheme="High-value dataset categories" 
             schemeURI="http://data.europa.eu/bna/asd487ae75" 
             valueURI="http://data.europa.eu/bna/c_dd313021"
             classificationCode="c_dd313021" 
