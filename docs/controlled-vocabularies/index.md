@@ -32,7 +32,7 @@ There are multiple vocabularies used to categorise and tag resources. Some of th
 [https://www.getty.edu/research/tools/vocabularies/aat/](https://www.getty.edu/research/tools/vocabularies/aat/)  
      
 Example term:  
-[http://vocab.getty.edu/page/aat/300191918](http://vocab.getty.edu/page/aat/300191918)
+[http://vocab.getty.edu/aat/300191918](http://vocab.getty.edu/aat/300191918)
 
 ??? example "Example usage"
     === "DataCite XML"
@@ -40,8 +40,8 @@ Example term:
         <subjects>
             <subject 
             subjectScheme="AAT The art & Architecture Thesaurus" 
-            schemeURI="http://vocab.getty.edu/page/aat/" 
-            valueURI="http://vocab.getty.edu/page/aat/300191918"
+            schemeURI="http://vocab.getty.edu/aat/" 
+            valueURI="http://vocab.getty.edu/aat/300191918"
             classificationCode="300191918" 
             xml:lang="en">Asian coins</subject>
         </subjects>
@@ -54,8 +54,8 @@ Example term:
             "keywords": [
                 {
                     "@type": "DefinedTerm",
-                    "@id": "http://vocab.getty.edu/page/aat/300191918",
-                    "inDefinedTermSet": "http://vocab.getty.edu/page/aat/",
+                    "@id": "http://vocab.getty.edu/aat/300191918",
+                    "inDefinedTermSet": "http://vocab.getty.edu/aat/",
                     "termCode": "300191918",
                     "name": "Asian coins"
                 }
@@ -175,7 +175,7 @@ Example term:
 [https://elsst.cessda.eu](https://elsst.cessda.eu)  
      
 Example term:  
-[https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f](https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f) 
+[https://elsst.cessda.eu/id/6/a74cd285-d1c6-4e55-8c0d-faf0fe94399f](https://elsst.cessda.eu/id/6/a74cd285-d1c6-4e55-8c0d-faf0fe94399f) 
 
 ??? example "Example usage"
     === "DataCite XML"
@@ -184,8 +184,8 @@ Example term:
             <subject 
             subjectScheme="ELSST The European Language Social Science Thesaurus" 
             schemeURI="https://elsst.cessda.eu" 
-            valueURI="https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f"
-            classificationCode="urn:ddi:int.cessda.elsst:a74cd285-d1c6-4e55-8c0d-faf0fe94399f:4" 
+            valueURI="https://elsst.cessda.eu/id/6/a74cd285-d1c6-4e55-8c0d-faf0fe94399f"
+            classificationCode="urn:ddi:int.cessda.elsst:a74cd285-d1c6-4e55-8c0d-faf0fe94399f:6" 
             xml:lang="en">ENVIRONMENT</subject>
         </subjects>
         ```
@@ -197,9 +197,9 @@ Example term:
             "keywords": [
                 {
                     "@type": "DefinedTerm",
-                    "@id": "https://elsst.cessda.eu/id/4/a74cd285-d1c6-4e55-8c0d-faf0fe94399f",
+                    "@id": "https://elsst.cessda.eu/id/6/a74cd285-d1c6-4e55-8c0d-faf0fe94399f",
                     "inDefinedTermSet": "https://elsst.cessda.eu",
-                    "termCode": "urn:ddi:int.cessda.elsst:a74cd285-d1c6-4e55-8c0d-faf0fe94399f:4",
+                    "termCode": "urn:ddi:int.cessda.elsst:a74cd285-d1c6-4e55-8c0d-faf0fe94399f:6",
                     "name": "ENVIRONMENT"
                 }
             ]
