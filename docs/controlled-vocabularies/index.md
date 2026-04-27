@@ -133,6 +133,70 @@ Example term:
             ]
         }
         ```
+### Catalogue of Life
+[https://www.catalogueoflife.org](https://www.catalogueoflife.org)
+
+Example term: 
+[https://www.catalogueoflife.org/data/taxon/WQC2](https://www.catalogueoflife.org/data/taxon/WQC2)
+
+??? example "Example usage"
+    === "DataCite XML"
+    ```xml
+    <subjects>
+        <subject 
+        subjectScheme="Catalogue of Life" valueURI="https://www.catalogueoflife.org/data/taxon/WQC2" classificationCode="WQC2" 
+        xml:lang="en">coeliccia didyma selys, 1863</subject>
+    </subjects>
+    ```
+=== "Schema.org JSON-LD"
+    ```json
+    {
+        "@context":"https://schema.org/",
+        "@type": "Dataset",
+        "keywords": [
+            {
+                "@type": "DefinedTerm",
+                "@id": "https://www.catalogueoflife.org/data/taxon/WQC2",
+                "name": "coeliccia didyma selys, 1863",
+                "termCode": "WQC2"
+            }
+        ]
+    }
+    ```
+
+### Dyntaxa - svensk taxonomisk databas
+[https://artfakta.se/metadata/dyntaxa](https://artfakta.se/metadata/dyntaxa)
+
+Example term:
+[https://namnochslaktskap.artfakta.se/taxa/251711](https://namnochslaktskap.artfakta.se/taxa/251711)
+
+??? example "Example usage"
+    === "Datacite XML"
+        ```xml
+        <subjects>
+            <subject
+            subjectScheme="Dyntaxa" 
+            valueURI="https://namnochslaktskap.artfakta.se/taxa/251711" 
+            classificationCode="251711" 
+            xml:lang="en">labolips innupta</subject>
+        </subjects>
+        ```
+    === "Schema.org JSON-LD"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "https://namnochslaktskap.artfakta.se/taxa/251711",
+                    "name": "labolips innupta",
+                    "termCode": "251711"
+                }
+            ]
+        }
+        ```
+
 ### High-value dataset categories
 [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category)  
 
@@ -524,6 +588,37 @@ Example term:
         }
         ```
 
+### SNOMED CT - Systematized Nomenclature of Medicine - Clinical Terms
+[https://www.nlm.nih.gov/healthit/snomedct/index.html] (https://www.nlm.nih.gov/healthit/snomedct/index.html)
+
+??? example "Example usage"
+    === "DataCite XML"
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="SNOMEDCT" 
+            valueURI="http://snomed.info/id/416729007" classificationCode="416729007"
+            xml:lang="en">AIDS (acquired immunodeficiency syndrome) related neutropenia
+            </subject>
+        </subjects>
+        ```
+    === "Schema.org JSON-LD"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "http://snomed.info/id/416729007",
+                    "name": "AIDS (acquired immunodeficiency syndrome) related neutropenia",
+                    "description": "Neutropenia with acquired immunodeficiency syndrome (disorder)",
+                    "termCode": "416729007"
+                }
+            ]
+        }
+        ```
+        
 ## Geography
 
 ### Geonames
