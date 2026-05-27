@@ -681,7 +681,7 @@ Examples: eng, deu, swe
 ## License
 
 For recommendations on open licenses and marks in a Swedish context, see the following summary by Digg:  
-[Rekommendation om öppna licenser och immaterialrätt](https://www.digg.se/kunskap-och-stod/oppna-och-delade-data/offentliga-aktorer/rekommendation-om-oppna-licenser-och-immaterialratt)
+[Rekommendation om öppna licenser och immaterialrätt](https://www.digg.se/kunskap-och-stod/oppna-och-delade-data/rekommendation-om-oppna-licenser-och-immaterialratt)
 
 [SPDX License List](https://spdx.org/licenses/)
 
