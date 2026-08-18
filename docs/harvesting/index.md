@@ -10,32 +10,65 @@ To avoid a Researchdata.se-specific method, we recommend using established metad
 
 ``` mermaid
 graph
-  RDA[(RDA \n elasticsearch)]
-  RDAC[researchdata.se]
+  RDA[(researchdata.se \n elasticsearch)]
+  RDAC[researchdata.se \n catalogue]
   
-  DS[(DataCite)]
-  DSOAI[DataCite\nOAI-PMH endpoint]
-  DSAPI[DataCite API]
-  DS --> DSOAI
-  DSAPI --> DS
+  DATACITE[(DataCite)]
+  DATACITEOAI[DataCite\nOAI-PMH endpoint]
+  DATACITEAPI[DataCite API]
+  DATACITE --> DATACITEOAI
+  DATACITEAPI --> DATACITE
 
-  DSOAI --> RDAH
+  DATACITEOAI --> RDAH
 
 
   RP1[(Repository 1)]
-  OAI1[OAI-PMH endpoint]
+  OAI1[Repository 1 \n OAI-PMH endpoint]
 
   RP3[(Repository 3)]
-  RP3 --> DSAPI
+  RP3 --> DATACITEAPI
 
   RP4[(Repository 4)]
-  RP4 --> DSAPI
+  RP4 --> DATACITEAPI
 
   RP2[(Repository 2)]
-  LDSM2[sitemap.xml]
-  LDLP2[Landing page \nJsonLD]
+  LDSM2@{ shape: doc, label: "sitemap.xml"}
+  RP2 --> LDLP2
+  LDLP2@{ shape: documents, label: "Landing page \nJSON-LD"}
 
-  RDAH[RDA harvester]
+  RDAH@{ shape: procs, label: "researchdata.se \n harvester"}
+
+  RDAOAI[researchdata.se \n OAI-PMH endpoint]
+  RDAC --> RDAOAI
+
+  RDACDCAT@{ shape: document, label: "researchdata.se \n DCAT export"}
+  RDAC --> RDACDCAT
+
+  RDACATLD@{ shape: documents, label: "Landing page\nJSON-LD"}
+  RDAC --> RDACATLD
+
+  DATAPORTAL[dataportal.se]
+  RDACDCAT --> DATAPORTAL
+
+  EUDATAPORTAL[data.europa.eu]
+  DATAPORTAL --> EUDATAPORTAL
+
+  CESSDA[datacatalogue.cessda.eu]
+  RDAOAI --> CESSDA
+
+  CLARINVLO[vlo.clarin.eu]
+  RDAOAI --> CLARINVLO
+
+  ARIADNE[portal.ariadne-infrastructure.eu]
+  RDAOAI -. under development .-> ARIADNE
+
+  RDACSITEMAP@{ shape: doc, label: "sitemap.xml"}
+  RDAC --> RDACSITEMAP
+  RDACSITEMAP --> RDACATLD
+
+  WEBCRAWLERS["web crawlers \n (Google, Bing, etc.)"]
+  RDACSITEMAP --> WEBCRAWLERS
+  RDACATLD --> WEBCRAWLERS
 
   RP1 --> OAI1
   OAI1 --> RDAH
