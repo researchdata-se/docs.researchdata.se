@@ -11,83 +11,140 @@ The figure below illustrates the harvesting flow.
 
 ``` mermaid
 graph
-  RDA[(researchdata.se \n elasticsearch)]
-  RDAC[researchdata.se \n catalogue]
-  click RDAC "https://researchdata.se/" "researchdata.se catalogue"
-  
-  DATACITE[(DataCite)]
-  DATACITEOAI[DataCite\nOAI-PMH endpoint]
-  click DATACITEOAI "https://support.datacite.org/docs/datacite-oai-pmh" "DataCite OAI-PMH endpoint"
-  DATACITEAPI[DataCite API]
-  click DATACITEAPI "https://support.datacite.org/docs/api" "DataCite API"
-  DATACITE --> DATACITEOAI
-  DATACITEAPI --> DATACITE
+  %% =========================================================
+  %% REPOSITORIES
+  %% =========================================================
 
-  DATACITEOAI --> RDAH
+  repo1[(Repository 1)]
+  repo1_oai[Repository 1 \n OAI-PMH endpoint]
+
+  repo2[(Repository 2)]
+  repo2_sitemap@{ shape: doc, label: "sitemap.xml"}
+  repo2_jsonld@{ shape: documents, label: "Landing page \nJSON-LD"}
+
+  repo3[(Repository 3)]
+  repo4[(Repository 4)]
 
 
-  RP1[(Repository 1)]
-  OAI1[Repository 1 \n OAI-PMH endpoint]
+  %% =========================================================
+  %% DATACITE
+  %% =========================================================
 
-  RP3[(Repository 3)]
-  RP3 --> DATACITEAPI
+  datacite[(DataCite)]
 
-  RP4[(Repository 4)]
-  RP4 --> DATACITEAPI
+  datacite_oai[DataCite\nOAI-PMH endpoint]
+  click datacite_oai "https://support.datacite.org/docs/datacite-oai-pmh" "DataCite OAI-PMH endpoint"
 
-  RP2[(Repository 2)]
-  LDSM2@{ shape: doc, label: "sitemap.xml"}
-  RP2 --> LDLP2
-  LDLP2@{ shape: documents, label: "Landing page \nJSON-LD"}
+  datacite_api[DataCite API]
+  click datacite_api "https://support.datacite.org/docs/api" "DataCite API"
 
-  RDAH@{ shape: procs, label: "researchdata.se \n harvester"}
 
-  RDAOAI[researchdata.se \n OAI-PMH endpoint]
-  click RDAOAI "https://docs.researchdata.se/harvesting/oai-pmh/" "researchdata.se OAI-PMH endpoint"
-  RDAC --> RDAOAI
+  %% =========================================================
+  %% RESEARCHDATA.SE — INGESTION AND CATALOGUE
+  %% =========================================================
 
-  RDACDCAT@{ shape: document, label: "researchdata.se \n DCAT export"}
-  RDAC --> RDACDCAT
+  rda_harvester@{ shape: procs, label: "researchdata.se \n harvester"}
 
-  RDACATLD@{ shape: documents, label: "Landing page\nJSON-LD"}
-  RDAC --> RDACATLD
+  rda_index[(researchdata.se \n elasticsearch)]
 
-  DATAPORTAL[dataportal.se]
-  click DATAPORTAL "https://dataportal.se/" "Sweden's national data portal"
-  RDACDCAT --> DATAPORTAL
+  rda_catalogue[researchdata.se \n catalogue]
+  click rda_catalogue "https://researchdata.se/" "researchdata.se catalogue"
 
-  EUDATAPORTAL[data.europa.eu]
-  click EUDATAPORTAL "https://data.europa.eu/" "EU Data Portal"
-  DATAPORTAL --> EUDATAPORTAL
 
-  CESSDA[datacatalogue.cessda.eu]
-  click CESSDA "https://datacatalogue.cessda.eu/" "CESSDA Data Catalogue"
-  RDAOAI --> CESSDA
+  %% =========================================================
+  %% RESEARCHDATA.SE — PUBLIC METADATA INTERFACES
+  %% =========================================================
 
-  CLARINVLO[vlo.clarin.eu]
-  click CLARINVLO "https://vlo.clarin.eu/" "CLARIN Virtual Language Observatory"
-  RDAOAI --> CLARINVLO
+  rda_oai[researchdata.se \n OAI-PMH endpoint]
+  click rda_oai "https://docs.researchdata.se/harvesting/oai-pmh/" "researchdata.se OAI-PMH endpoint"
 
-  ARIADNE[portal.ariadne-infrastructure.eu]
-  click ARIADNE "https://portal.ariadne-infrastructure.eu/" "ARIADNE archaeology portal"
-  RDAOAI -. under development .-> ARIADNE
+  rda_dcat@{ shape: document, label: "researchdata.se \n DCAT export"}
 
-  RDACSITEMAP@{ shape: doc, label: "sitemap.xml"}
-  RDAC --> RDACSITEMAP
-  RDACSITEMAP --> RDACATLD
+  rda_sitemap@{ shape: doc, label: "sitemap.xml"}
 
-  WEBCRAWLERS["web crawlers \n (Google, Bing, etc.)"]
-  RDACSITEMAP --> WEBCRAWLERS
-  RDACATLD --> WEBCRAWLERS
+  rda_jsonld@{ shape: documents, label: "Landing page\nJSON-LD"}
 
-  RP1 --> OAI1
-  OAI1 --> RDAH
 
-  RP2 --> LDSM2
-  LDSM2 --> LDLP2
-  LDSM2 --> RDAH
-  LDLP2 --> RDAH
+  %% =========================================================
+  %% DOWNSTREAM CATALOGUES
+  %% =========================================================
 
-  RDAH --> RDA
-  RDA --> RDAC
+  dataportal[dataportal.se]
+  click dataportal "https://dataportal.se/" "Sweden's national data portal"
+
+  eu_dataportal[data.europa.eu]
+  click eu_dataportal "https://data.europa.eu/" "EU Data Portal"
+
+  cessda[datacatalogue.cessda.eu]
+  click cessda "https://datacatalogue.cessda.eu/" "CESSDA Data Catalogue"
+
+  clarin_vlo[vlo.clarin.eu]
+  click clarin_vlo "https://vlo.clarin.eu/" "CLARIN Virtual Language Observatory"
+
+  ariadne[portal.ariadne-infrastructure.eu]
+  click ariadne "https://portal.ariadne-infrastructure.eu/" "ARIADNE archaeology portal"
+
+  web_crawlers["web crawlers \n (Google, Bing, etc.)"]
+
+
+  %% =========================================================
+  %% REPOSITORY INGESTION FLOWS
+  %% =========================================================
+
+  repo1 --> repo1_oai
+  repo1_oai --> rda_harvester
+
+  repo2 --> repo2_sitemap
+  repo2 --> repo2_jsonld
+
+  repo2_sitemap --> repo2_jsonld
+  repo2_sitemap --> rda_harvester
+  repo2_jsonld --> rda_harvester
+
+  repo3 --> datacite_api
+  repo4 --> datacite_api
+
+
+  %% =========================================================
+  %% DATACITE INGESTION FLOW
+  %% =========================================================
+
+  datacite_api --> datacite
+  datacite --> datacite_oai
+  datacite_oai --> rda_harvester
+
+
+  %% =========================================================
+  %% RESEARCHDATA.SE INTERNAL FLOW
+  %% =========================================================
+
+  rda_harvester --> rda_index
+  rda_index --> rda_catalogue
+
+
+  %% =========================================================
+  %% RESEARCHDATA.SE EXPORT FLOWS
+  %% =========================================================
+
+  rda_catalogue --> rda_oai
+  rda_catalogue --> rda_dcat
+  rda_catalogue --> rda_sitemap
+  rda_catalogue --> rda_jsonld
+
+  rda_sitemap --> rda_jsonld
+
+
+  %% =========================================================
+  %% DOWNSTREAM HARVESTING
+  %% =========================================================
+
+  rda_dcat --> dataportal
+  dataportal --> eu_dataportal
+
+  rda_oai --> cessda
+  rda_oai --> clarin_vlo
+  rda_oai -. under development .-> ariadne
+
+  rda_sitemap --> web_crawlers
+  rda_jsonld --> web_crawlers
 ```
