@@ -6,6 +6,22 @@ In addition, persistent identifiers (PIDs) are used to provide robust links and 
 
 A selection of best practices regarding controlled vocabularies and persistent identifiers are listed below. These will make it more likely that Researchdata.se will be able to reuse the metadata when harvesting from a data source. 
 
+## Access rights and restrictions
+
+Describe the access rights and restrictions for a resource.
+
+
+### COAR Access Rights
+[https://vocabularies.coar-repositories.org/access_rights](https://vocabularies.coar-repositories.org/access_rights)
+
+Example term: [http://purl.org/coar/access_right/c_abf2](http://purl.org/coar/access_right/c_abf2)
+
+### EU Vocabulary Access Rights
+[http://publications.europa.eu/resource/authority/access-right](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right)  
+
+Example term:  
+[http://publications.europa.eu/resource/authority/access-right/PUBLIC](http://publications.europa.eu/resource/authority/access-right/PUBLIC)
+
 ## Organisations
 
 For organisations, providing a [ROR ID](https://ror.org) PID is the preferred method for identifying the organisation.
@@ -141,28 +157,28 @@ Example term:
 
 ??? example "Example usage"
     === "DataCite XML"
-    ```xml
-    <subjects>
-        <subject 
-        subjectScheme="Catalogue of Life" valueURI="https://www.catalogueoflife.org/data/taxon/WQC2" classificationCode="WQC2" 
-        xml:lang="en">coeliccia didyma selys, 1863</subject>
-    </subjects>
-    ```
-=== "Schema.org JSON-LD"
-    ```json
-    {
-        "@context":"https://schema.org/",
-        "@type": "Dataset",
-        "keywords": [
-            {
-                "@type": "DefinedTerm",
-                "@id": "https://www.catalogueoflife.org/data/taxon/WQC2",
-                "name": "coeliccia didyma selys, 1863",
-                "termCode": "WQC2"
-            }
-        ]
-    }
-    ```
+        ```xml
+        <subjects>
+            <subject 
+            subjectScheme="Catalogue of Life" valueURI="https://www.catalogueoflife.org/data/taxon/WQC2" classificationCode="WQC2" 
+            xml:lang="en">coeliccia didyma selys, 1863</subject>
+        </subjects>
+        ```
+    === "Schema.org JSON-LD"
+        ```json
+        {
+            "@context":"https://schema.org/",
+            "@type": "Dataset",
+            "keywords": [
+                {
+                    "@type": "DefinedTerm",
+                    "@id": "https://www.catalogueoflife.org/data/taxon/WQC2",
+                    "name": "coeliccia didyma selys, 1863",
+                    "termCode": "WQC2"
+                }
+            ]
+        }
+        ```
 
 ### Dyntaxa - svensk taxonomisk databas
 [https://artfakta.se/metadata/dyntaxa](https://artfakta.se/metadata/dyntaxa)
