@@ -17,7 +17,7 @@ The following metadata formats are available:
 - `oai_dc` [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dces/)  
 - `datacite` [DataCite XML](https://schema.datacite.org)  
 - `dcat` DCAT following the [DCAT-AP-SE 3.0 specification](https://docs.dataportal.se/dcat/en/)  
-- `ddi25` [DDI-Codebook version 2.5](https://ddialliance.org/ddi-codebook#v2.5)  
+- `ddi26` [DDI-Codebook version 2.6](https://ddialliance.org/ddi-codebook#v2.6)  
 - `ddi33` [DDI-Lifecycle version 3.3](https://ddialliance.org/ddi-lifecycle#v3.3)  
 - `cmdi` [CMDI: Component Metadata Infrastructure](https://www.clarin.eu/content/cmdi-component-metadata-infrastructure)  
 
