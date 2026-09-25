@@ -242,17 +242,25 @@ The version number of the resource (occurrences: 0-1).
 ### Rights (R)
 
 Any rights information for this resource (occurrences: 0-n).  
-Its recomended to describe the access level by using [info:eu-repo-Access-Terms vocabulary](https://guidelines.openaire.eu/en/latest/data/field_rights.html#rightsuri-ma).
+Its recomended to describe the access level by using https://vocabularies.coar-repositories.org/access_rights/ or [info:eu-repo-Access-Terms vocabulary](https://guidelines.openaire.eu/en/latest/data/field_rights.html#rightsuri-ma).
 
-```xml title="rights example"
+```xml title="rights example - info:eu-repo-Access-Terms vocabular"
 <rightsList>
-  <rights rightsURI="info:eu-repo/semantics/openAccess" />
+  <rights rightsURI="info:eu-repo/semantics/openAccess">openAccess</rights>
+  <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+</rightsList>
+```
+
+```xml title="rights example - COAR Access Rights"
+<rightsList>
+  <rights rightsURI="http://purl.org/coar/access_right/c_abf2">open access</rights>
   <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
 </rightsList>
 ```
 
 [Specification](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/rights/) |
-[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_rights.html)
+[OpenAIRE](https://guidelines.openaire.eu/en/latest/data/field_rights.html) |
+[COAR Access rights](https://vocabularies.coar-repositories.org/access_rights/)
 
 --------------
 
