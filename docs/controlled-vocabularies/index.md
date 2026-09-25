@@ -216,8 +216,8 @@ Example term:
 ### High-value dataset categories
 [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category)  
 
-Used to classify high-value datasets. These catagories are used in the EU Open Data Portal to identify datasets that are considered high-value according to the EU Data portal.  
-These ceategories are also used for the swedish data portal dataportal.se:  [https://docs.dataportal.se/dcat/en/#5.5](https://docs.dataportal.se/dcat/en/#5.5)  
+Used to classify high-value datasets. These categories are used in the EU Open Data Portal to identify datasets that are considered high-value according to the EU Data portal.  
+These categories are also used for the Swedish data portal dataportal.se:  [https://docs.dataportal.se/dcat/en/#5.5](https://docs.dataportal.se/dcat/en/#5.5)  
 
 Example term:  
 [http://data.europa.eu/bna/c_dd313021](http://data.europa.eu/bna/c_dd313021)  
