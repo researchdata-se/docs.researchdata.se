@@ -143,7 +143,7 @@ graph
 
   rda_oai --> cessda
   rda_oai --> clarin_vlo
-  rda_oai -. under development .-> ariadne
+  rda_oai --> ariadne
 
   rda_sitemap --> web_crawlers
   rda_jsonld --> web_crawlers
